@@ -19,12 +19,10 @@ nav {
   padding: 20px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
 nav a.router-link-exact-active {
   color: #00A8CD;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
 }
 </style>

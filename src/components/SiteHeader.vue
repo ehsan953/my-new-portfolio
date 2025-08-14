@@ -2,7 +2,7 @@
   <header class="bg-gray-900 text-white">
     <div class="container mx-auto max-w-[1400px] flex items-center justify-between px-4 py-3">
       <!-- Logo -->
-      <router-link to="/" class="text-xl font-bold">
+      <router-link to="/" class="text-xl font-bold order-2">
         <div class="flex items-center space-x-2">
           <div class="w-10 h-10 rounded-full bg-white text-[#00A8CD] flex items-center justify-center text-lg font-bold">
             M
@@ -15,7 +15,7 @@
 
       <!-- Hamburger button (mobile) -->
       <button
-        class="md:hidden block text-gray-300 hover:text-white focus:outline-none"
+        class="order-1 sm:hidden block text-gray-300 hover:text-white focus:outline-none"
         @click="isOpen = !isOpen"
       >
         <svg
@@ -43,32 +43,42 @@
       </button>
 
       <!-- Desktop nav -->
-      <nav class="hidden md:flex space-x-6">
+      <nav class="hidden sm:flex sm:order-2 gap-6 md:gap-8">
         <router-link
           v-for="item in navItems"
           :key="item.name"
           :to="item.path"
-          class="hover:text-[#00A8CD] text-gray-500"
+          class="hover:text-[#00A8CD] text-gray-400 font-medium"
         >
           {{ item.name }}
         </router-link>
       </nav>
+      <router-link to="/contact" class="order-3">
+        <v-btn class="bg-[#00A8CD] hover:bg-[#00a7cdf4] py-2 px-4 rounded-md font-medium glow">
+          Contact
+        </v-btn>
+      </router-link>
     </div>
 
     <!-- Mobile nav -->
-    <div v-if="isOpen" class="md:hidden bg-gray-900 px-4 pb-4">
-      <nav class="flex flex-col space-y-3">
+    <div
+      class="absolute opacity-95 top-[62px] left-0 w-full bg-gray-900 px-4 py-6 transform transition-transform duration-300 ease-in-out sm:hidden z-50"
+      :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
+    >
+      <!-- Menu items -->
+      <nav class="flex flex-col gap-4">
         <router-link
           v-for="item in navItems"
           :key="item.name"
           :to="item.path"
-          class="hover:text-[#00A8CD] text-gray-500"
+          class="hover:text-[#00A8CD] text-gray-400 font-medium"
           @click="isOpen = false"
         >
           {{ item.name }}
         </router-link>
       </nav>
     </div>
+
   </header>
 </template>
 
@@ -85,9 +95,23 @@ export default defineComponent({
         { name: 'About', path: '/about' },
         { name: 'Services', path: '/services' },
         { name: 'Portfolio', path: '/portfolio' },
-        { name: 'Contact', path: '/contact' }
+        // { name: 'Contact', path: '/contact' }
       ]
     }
   }
 })
 </script>
+<style scoped>
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px 1px white;
+  }
+  50% {
+    box-shadow: 0 0 20px 4px white;
+  }
+}
+
+.glow {
+  animation: glowPulse 1.7s ease-in-out infinite;
+}
+</style>
