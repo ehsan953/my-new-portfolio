@@ -1,5 +1,5 @@
 <template>
-  <section class=" bg-black text-white py-12 lg:py-16 px-6 md:px-12 lg:px-16 bg-no-repeat bg-cover bg-center" style="background-image:url('/1719419702bg2.jpg')">
+  <section class=" bg-black text-white py-12 lg:py-16 px-6 md:px-12 lg:px-16 hero-bg md:bg-no-repeat md:bg-cover md:bg-center">
     <div
       class="container mx-auto max-w-[1400px] flex flex-col md:flex-row items-center justify-between gap-10"
     >
@@ -112,5 +112,9 @@ export default defineComponent({
 .glow {
   animation: glowPulse 1.7s ease-in-out infinite;
 }
-
+@media(min-width:768px){
+    .hero-bg{
+        background-image:url('/public/1719419702bg2.jpg');
+    }
+}
 </style>
