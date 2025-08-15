@@ -2,7 +2,7 @@
   <div class="main-layout">
     <SiteHeader />
 
-    <div class="min-h-[80vh]">
+    <div class="min-h-[80vh] bg-black">
       <router-view :key="$route.fullPath"></router-view>
     </div>
 
