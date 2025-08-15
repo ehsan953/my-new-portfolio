@@ -3,7 +3,7 @@
     <!-- Section Header -->
     <div class="text-center mb-12">
       <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-4">My Services</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">
+      <p class="text-gray-400 max-w-2xl mx-auto px-2">
         I help businesses and individuals with modern web solutions, creating responsive, interactive, and high-performance websites and applications.
       </p>
     </div>

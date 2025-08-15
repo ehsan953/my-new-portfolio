@@ -23,8 +23,7 @@
 
         <!-- Text + Button (60%) -->
         <div class="flex-1 md:basis-3/5 text-left">
-          <p class="text-gray-300 text-lg mb-4">
-            <!-- I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React. I have also worked with Firebase and am currently expanding my skills towards full-stack development. <br/>In addition to coding, I bring over 3 years of experience in UI design, transforming Figma designs into fully responsive and visually appealing interfaces using HTML, CSS, and TailwindCSS. I enjoy crafting seamless user experiences and bridging the gap between design and development, delivering polished and interactive web applications. -->
+          <p class="text-gray-300 text-lg mb-6 md:py-2">
             I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React.<br/>
             I have also worked with Firebase and am currently expanding my skills towards full-stack development.<br/>
 
