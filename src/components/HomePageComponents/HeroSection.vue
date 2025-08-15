@@ -34,6 +34,7 @@
             </router-link>
           <button
             class="border border-[#00A8CD] text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
+            onclick="window.location.href='/EhsanResumeB.pdf'"
           >
             Download CV
           </button>
