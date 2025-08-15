@@ -1,5 +1,5 @@
 <template>
-  <section class=" bg-black text-white py-12 px-6 md:px-12 lg:px-16">
+  <section class=" bg-black text-white py-12 lg:py-16 px-6 md:px-12 lg:px-16 bg-no-repeat bg-cover bg-center" style="background-image:url('/1719419702bg2.jpg')">
     <div
       class="container mx-auto max-w-[1400px] flex flex-col md:flex-row items-center justify-between gap-10"
     >
