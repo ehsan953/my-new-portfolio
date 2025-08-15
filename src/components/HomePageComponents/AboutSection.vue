@@ -24,30 +24,49 @@
         <!-- Text + Button (60%) -->
         <div class="flex-1 md:basis-3/5 text-left">
           <p class="text-gray-300 text-lg mb-4">
-            I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React. I have also worked with Firebase and am currently expanding my skills towards full-stack development. <br/>In addition to coding, I bring over 3 years of experience in UI design, transforming Figma designs into fully responsive and visually appealing interfaces using HTML, CSS, and TailwindCSS. I enjoy crafting seamless user experiences and bridging the gap between design and development, delivering polished and interactive web applications.
+            <!-- I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React. I have also worked with Firebase and am currently expanding my skills towards full-stack development. <br/>In addition to coding, I bring over 3 years of experience in UI design, transforming Figma designs into fully responsive and visually appealing interfaces using HTML, CSS, and TailwindCSS. I enjoy crafting seamless user experiences and bridging the gap between design and development, delivering polished and interactive web applications. -->
+            I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React.<br/>
+            I have also worked with Firebase and am currently expanding my skills towards full-stack development.<br/>
+
+            In addition to coding, I bring over 3 years of experience in UI design, transforming Figma designs into fully responsive and visually appealing interfaces using HTML, CSS, and TailwindCSS. 
+            I enjoy crafting seamless user experiences and bridging the gap between design and development, delivering polished and interactive web applications.<br/>
+
+            I am passionate about learning new technologies and continuously improving my skill set. 
+            I take pride in writing clean, maintainable code while adhering to best practices and modern development standards.<br/>
+            Collaboration, problem-solving, and attention to detail are at the core of how I approach projects, ensuring that every application I work on is both functional and user-friendly.<br/>
+
+            Whether it’s building responsive layouts, integrating APIs, or optimizing performance, I strive to create solutions that meet user needs and business goals effectively.
           </p>
-          <button class="bg-[#00A8CD] text-black px-6 py-3 rounded font-semibold hover:bg-[#0090b3] transition mb-4">
-            Download CV
-          </button>
-          <!-- Skills -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-6">
-        <div v-for="skill in skills" :key="skill.name" class="space-y-2">
-          <!-- Rounded Loading Bar -->
-          <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-            <div 
-              class="h-2 rounded-full bg-[#00A8CD]" 
-              :style="{ width: skill.percentage + '%' }"
-            ></div>
+          <div class="flex justify-start">
+              <button
+                class="border border-[#00A8CD] text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
+                onclick="window.location.href='/EhsanResumeB.pdf'"
+                >
+                Download CV
+              </button>
           </div>
-          <!-- Percentage -->
-          <p class="text-gray-300 font-semibold text-center">{{ skill.percentage }}%</p>
-          <!-- Skill Name -->
-          <p class="text-gray-400 font-medium text-center">{{ skill.name }}</p>
-        </div>
-      </div>
+          <!-- Skills -->
         </div>
         
+    </div>
+    <h3 class="text-2xl md:text-3xl font-bold text-[#00A8CD] mb-6 text-center md:text-left">
+        Skills
+    </h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 mt-6">
+      <div v-for="skill in skills" :key="skill.name" class="space-y-2">
+        <!-- Rounded Loading Bar -->
+        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+          <div 
+            class="h-2 rounded-full bg-[#00A8CD]" 
+            :style="{ width: skill.percentage + '%' }"
+          ></div>
+        </div>
+        <!-- Percentage -->
+        <p class="text-gray-300 font-semibold text-center">{{ skill.percentage }}%</p>
+        <!-- Skill Name -->
+        <p class="text-gray-400 font-medium text-center">{{ skill.name }}</p>
       </div>
+    </div>
 
       
 
