@@ -24,8 +24,7 @@
         <!-- Text + Button (60%) -->
         <div class="flex-1 md:basis-3/5 text-left">
           <p class="text-gray-300 text-lg mb-6 md:py-2">
-            I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React.<br/>
-            I have also worked with Firebase and am currently expanding my skills towards full-stack development.<br/>
+            I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React. I have also worked with Firebase and am currently expanding my skills towards full-stack development.<br/>
 
             In addition to coding, I bring over 3 years of experience in UI design, transforming Figma designs into fully responsive and visually appealing interfaces using HTML, CSS, and TailwindCSS. 
             I enjoy crafting seamless user experiences and bridging the gap between design and development, delivering polished and interactive web applications.<br/>
@@ -48,18 +47,53 @@
         </div>
         
     </div>
-    <h3 class="text-2xl md:text-3xl font-bold text-[#00A8CD] mb-6 text-center md:text-left">
+    <h3 class="text-3xl md:text-4xl font-bold text-[#00A8CD] mb-6 text-center">
         Skills
     </h3>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 mt-6">
+    <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-8 mt-6">
       <div v-for="skill in skills" :key="skill.name" class="space-y-2">
         <!-- Rounded Loading Bar -->
-        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+        <!-- <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
           <div 
             class="h-2 rounded-full bg-[#00A8CD]" 
             :style="{ width: skill.percentage + '%' }"
           ></div>
-        </div>
+        </div>   -->
+        <div class="relative w-20 h-20 m-auto">
+            <!-- Background Circle -->
+            <svg class="w-full h-full" viewBox="0 0 36 36">
+                <path
+                class="text-gray-700"
+                stroke-width="3.8"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                d="
+                    M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831
+                "
+                />
+                <!-- Progress Circle -->
+                <path
+                class="text-[#00A8CD]"
+                stroke-width="3.8"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                :stroke-dasharray="skill.percentage + ', 100'"
+                d="
+                    M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831
+                "
+                />
+            </svg>
+            <!-- Center Icon (optional) -->
+            <div class="absolute inset-0 flex items-center justify-center text-white">
+                <slot></slot>
+            </div>
+            </div>
         <!-- Percentage -->
         <p class="text-gray-300 font-semibold text-center">{{ skill.percentage }}%</p>
         <!-- Skill Name -->
