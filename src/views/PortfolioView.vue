@@ -40,7 +40,7 @@
           v-for="page in visiblePages" 
           :key="page"
           @click="currentPage = page"
-          :class="currentPage === page ? 'bg-[#00A8CD] text-black' : 'bg-gray-700 text-white'"
+          :class="currentPage === page ? 'bg-[#00A8CD] text-white' : 'bg-gray-700 text-white'"
           class="px-4 py-2 rounded font-semibold hover:bg-[#0090b3] transition"
         >
           {{ page }}

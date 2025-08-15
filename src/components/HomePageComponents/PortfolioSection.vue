@@ -22,7 +22,7 @@
       <!-- View All Button -->
       <div class="text-center">
         <router-link to="/portfolio">
-          <button class="bg-[#00A8CD] text-black px-8 py-3 rounded font-semibold hover:bg-[#0090b3] transition">
+          <button class="bg-[#00A8CD] text-white px-8 py-3 rounded font-semibold hover:bg-[#0090b3] transition">
             View All
           </button>
         </router-link>

@@ -43,7 +43,8 @@
             </div>
             <button
               type="submit"
-              class="w-full bg-[#00A8CD] text-black px-6 py-3 rounded-lg font-semibold hover:bg-[#0090b3] transition"
+              class="w-full hover:bg-[#00A8CD] text-[#00A8CD] hover:text-white px-6 py-3 rounded-lg font-semibold transition"
+              style="border:1px solid #00A8CD !important"
             >
               Send Message
             </button>

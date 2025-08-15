@@ -1,5 +1,5 @@
 <template>
-  <section class=" bg-black text-white py-12 lg:py-16 px-6 md:px-12 lg:px-16 hero-bg md:bg-no-repeat md:bg-cover md:bg-center">
+  <section class=" bg-black text-white py-12 lg:py-16 xl:py-20 px-6 md:px-12 lg:px-16 hero-bg md:bg-no-repeat md:bg-cover md:bg-center">
     <div
       class="container mx-auto max-w-[1400px] flex flex-col md:flex-row items-center justify-between gap-10"
     >
@@ -33,15 +33,16 @@
                 </button>
             </router-link>
           <button
-            class="border border-[#00A8CD] text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
+            class="text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
             onclick="window.location.href='/EhsanResumeB.pdf'"
+            style="border:1px solid #00A8CD !important"
           >
             Download CV
           </button>
         </div>
 
         <div
-          class="mx-auto xl:w-[80%] flex sm:gap-8 bg-[#111] rounded-lg shadow-md py-4 px-6 text-center justify-center divide-x divide-gray-600 border-b border-[#00A8CD]"
+          class="mx-auto xl:w-[80%] flex sm:gap-8 bg-[#111] rounded-lg shadow-md py-4 px-6 text-center justify-center divide-x divide-gray-600" style="border-bottom:1px solid #00A8CD !important"
         >
           <div class="px-4">
             <p class="text-2xl font-bold">{{ stats.experience }}</p>
