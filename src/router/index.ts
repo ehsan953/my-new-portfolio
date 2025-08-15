@@ -5,6 +5,7 @@ import AboutView from '../views/AboutView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import PortfolioView from '../views/PortfolioView.vue'
 import ContactView from '../views/ContactView.vue'
+import PortfolioDetailView from '../views/ProjectDetails.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/portfolio',
         name: 'portfolio',
         component: PortfolioView
+      },
+      {
+        path: '/project/:id',
+        name: 'ProjectDetails',
+        component: PortfolioDetailView
       },
       {
         path: '/contact',

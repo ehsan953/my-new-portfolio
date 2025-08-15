@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an contact us page</h1>
+    <ContactUsSection/>
   </div>
 </template>
+<script>
+import { defineComponent } from "vue";
+import ContactUsSection from "@/components/HomePageComponents/ContactSection.vue"
+export default defineComponent({
+  name: "ContactPage",
+  components: {
+     ContactUsSection
+  },
+})
+</script>

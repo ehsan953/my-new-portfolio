@@ -4,7 +4,7 @@
       <!-- Logo -->
       <router-link to="/" class="text-xl font-bold order-2">
         <div class="flex items-center space-x-2">
-          <div class="w-10 h-10 rounded-full bg-white text-[#00A8CD] flex items-center justify-center text-lg font-bold">
+          <div class="w-10 h-10 rounded-full bg-black border border-[#00A8CD] text-[#00A8CD] flex items-center justify-center text-lg font-bold">
             M
           </div>
           <span class="truncate max-w-[100px] text-[#00A8CD] sm:max-w-[150px]">
@@ -54,7 +54,7 @@
         </router-link>
       </nav>
       <router-link to="/contact" class="order-3">
-        <v-btn class="bg-[#00A8CD] hover:bg-[#00a7cdf4] py-2 px-4 rounded-md font-medium glow">
+        <v-btn class="hover:bg-[#00a7cdf4] py-2 px-4 rounded-md font-medium glow">
           Contact
         </v-btn>
       </router-link>
@@ -104,10 +104,10 @@ export default defineComponent({
 <style scoped>
 @keyframes glowPulse {
   0%, 100% {
-    box-shadow: 0 0 10px 1px white;
+    box-shadow: 0 0 10px 1px #00A8CD;
   }
   50% {
-    box-shadow: 0 0 20px 4px white;
+    box-shadow: 0 0 20px 4px #00A8CD;
   }
 }
 

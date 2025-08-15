@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Omnifood",
+    "description": "Food delivery app UI/UX.",
+    "image": "/portfolio_imgs/omnifood-thumbnail.png",
+    "details": "Full project details for Omnifood, including technologies used and features.",
+    "url": "https://omnifood-ahsan.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Omegus Prime",
+    "description": "E-commerce platform design.",
+    "image": "/portfolio_imgs/omegusprime.png",
+    "details": "Full project details for Omegus Prime.",
+    "url": "https://omegusprime.com/"
+  },
+  {
+    "id": 3,
+    "title": "CloudHub",
+    "description": "Cloud service dashboard UI.",
+    "image": "/portfolio_imgs/cloudhub.png",
+    "details": "Full project details for CloudHub.",
+    "url": "https://cloudhubb.netlify.app/"
+  },
+  {
+    "id": 4,
+    "title": "FSD Assessment",
+    "description": "Front-end assessment project.",
+    "image": "/portfolio_imgs/fsd-assessment.png",
+    "details": "Full project details for FSD Assessment.",
+    "url": "https://fsd-assessment-j8yn.vercel.app/"
+  },
+  {
+    "id": 5,
+    "title": "Otis Kit Pro",
+    "description": "Product landing page design.",
+    "image": "/portfolio_imgs/otis-kit-pro.png",
+    "details": "Full project details for Otis Kit Pro.",
+    "url": "https://otis-kit-pro.netlify.app/"
+  }
+]
