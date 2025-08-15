@@ -17,14 +17,22 @@
   },
   {
     "id": 3,
-    "title": "CloudHub",
-    "description": "Cloud service dashboard UI.",
-    "image": "/portfolio_imgs/cloudhub.png",
-    "details": "Full project details for CloudHub.",
-    "url": "https://cloudhubb.netlify.app/"
+    "title": "CodeSyncs",
+    "description": "CodeSyncs company site",
+    "image": "/portfolio_imgs/codesyncs.PNG",
+    "details": "Full project details for CodeSyncs",
+    "url": "https://www.codesyncs.com/"
   },
   {
     "id": 4,
+    "title": "International BodyTalk Association (IBA)",
+    "description": "CodeSyncs company site",
+    "image": "/portfolio_imgs/iba.png",
+    "details": "Full project details for IBA",
+    "url": "https://bodytalksystem.com/"
+  },
+  {
+    "id": 5,
     "title": "FSD Assessment",
     "description": "Front-end assessment project.",
     "image": "/portfolio_imgs/fsd-assessment.png",
@@ -32,11 +40,20 @@
     "url": "https://fsd-assessment-j8yn.vercel.app/"
   },
   {
-    "id": 5,
+    "id": 6,
+    "title": "CloudHub",
+    "description": "Cloud service dashboard UI.",
+    "image": "/portfolio_imgs/cloudhub.png",
+    "details": "Full project details for CloudHub.",
+    "url": "https://cloudhubb.netlify.app/"
+  },
+  {
+    "id": 7,
     "title": "Otis Kit Pro",
     "description": "Product landing page design.",
     "image": "/portfolio_imgs/otis-kit-pro.png",
     "details": "Full project details for Otis Kit Pro.",
     "url": "https://otis-kit-pro.netlify.app/"
   }
+  
 ]
