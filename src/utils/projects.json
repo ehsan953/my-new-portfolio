@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Omnifood",
-    "description": "Food delivery app UI/UX.",
+    "description": "Food delivery app UI.",
     "image": "/portfolio_imgs/omnifood-thumbnail.png",
     "details": "Full project details for Omnifood, including technologies used and features.",
     "url": "https://omnifood-ahsan.netlify.app/"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Omegus Prime",
-    "description": "E-commerce platform design.",
+    "description": "Software Company site.",
     "image": "/portfolio_imgs/omegusprime.png",
     "details": "Full project details for Omegus Prime.",
     "url": "https://omegusprime.com/"
@@ -26,17 +26,17 @@
   {
     "id": 4,
     "title": "International BodyTalk Association (IBA)",
-    "description": "CodeSyncs company site",
+    "description": "Bridging the gap between health & education",
     "image": "/portfolio_imgs/iba.png",
     "details": "Full project details for IBA",
     "url": "https://bodytalksystem.com/"
   },
   {
     "id": 5,
-    "title": "FSD Assessment",
+    "title": "LUXECLUB",
     "description": "Front-end assessment project.",
     "image": "/portfolio_imgs/fsd-assessment.png",
-    "details": "Full project details for FSD Assessment.",
+    "details": "Full project details for LUXECLUB.",
     "url": "https://fsd-assessment-j8yn.vercel.app/"
   },
   {
