@@ -60,7 +60,7 @@
     </div>
     <!-- Image Dialog -->
     <v-dialog v-model="dialog" max-width="1400px">
-      <v-card style="padding:16px">
+      <v-card style="padding:8px">
         <v-img :src="selectedImage" alt="Selected" class="w-full h-auto rounded-lg" />
       </v-card>
     </v-dialog>
