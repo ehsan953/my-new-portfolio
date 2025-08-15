@@ -4,7 +4,7 @@
       <!-- Logo -->
       <router-link to="/" class="text-xl font-bold order-2">
         <div class="flex items-center space-x-2">
-          <div class="w-10 h-10 rounded-full bg-black border border-[#00A8CD] text-[#00A8CD] flex items-center justify-center text-lg font-bold">
+          <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-lg font-bold" style="border:1px solid #00A8CD !important; color:#00A8CD !important">
             M
           </div>
           <span class="truncate max-w-[100px] text-[#00A8CD] sm:max-w-[150px]">
@@ -54,9 +54,9 @@
         </router-link>
       </nav>
       <router-link to="/contact" class="order-3">
-        <v-btn class="hover:bg-[#00a7cdf4] py-2 px-4 rounded-md font-medium glow">
+        <button class="hover:bg-[#00a7cdf4] py-2 px-4 rounded-md font-medium glow">
           Contact
-        </v-btn>
+        </button>
       </router-link>
     </div>
 

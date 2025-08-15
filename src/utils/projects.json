@@ -4,6 +4,17 @@
     "title": "Omnifood",
     "description": "Food delivery app UI.",
     "image": "/portfolio_imgs/omnifood-thumbnail.png",
+    "images": [
+      "/portfolio_imgs/omnifood-thumbnail.png",
+      "/portfolio_imgs/omnifood2.png",
+      "/portfolio_imgs/omnifood3.png"
+    ],
+    "technologies": ["HTML", "CSS", "Responsive Design"],
+    "features": [
+      "Modern responsive UI",
+      "Interactive food ordering",
+      "Optimized performance"
+    ],
     "details": "Full project details for Omnifood, including technologies used and features.",
     "url": "https://omnifood-ahsan.netlify.app/"
   },
@@ -12,6 +23,16 @@
     "title": "Omegus Prime",
     "description": "Software Company site.",
     "image": "/portfolio_imgs/omegusprime.png",
+    "images": [
+      "/portfolio_imgs/omegusprime.png",
+      "/portfolio_imgs/omegusprime2.png",
+      "/portfolio_imgs/omegusprime3.png"
+    ],
+    "technologies": ["Vue 3", "Vuex", "TypeScript", "Tailwind CSS", "Responsive Design", "SEO", "Unit Test Cases"],
+    "features": [
+      "Modern responsive UI",
+      "Optimized performance"
+    ],
     "details": "Full project details for Omegus Prime.",
     "url": "https://omegusprime.com/"
   },
@@ -20,6 +41,19 @@
     "title": "CodeSyncs",
     "description": "CodeSyncs company site",
     "image": "/portfolio_imgs/codesyncs.PNG",
+    "images": [
+      "/portfolio_imgs/codesyncs.PNG",
+      "/portfolio_imgs/codesyncs2.PNG",
+      "/portfolio_imgs/codesyncs3.PNG"
+    ],
+    "technologies": ["React", "Firebase", "Tailwind CSS", "Responsive Design"],
+    "features": [
+      "Modern responsive UI",
+      "Blog and Jobs Postings",
+      "Admin authorization via Firebase",
+      "Storing data for Blogs & Jobs using Firebase",
+      "Optimized performance"
+    ],
     "details": "Full project details for CodeSyncs",
     "url": "https://www.codesyncs.com/"
   },
@@ -28,6 +62,31 @@
     "title": "International BodyTalk Association (IBA)",
     "description": "Bridging the gap between health & education",
     "image": "/portfolio_imgs/iba.png",
+    "images": [
+      "/portfolio_imgs/iba2.png",
+      "/portfolio_imgs/iba3.png",
+      "/portfolio_imgs/iba4.webp"
+    ],
+    "technologies": ["Vue 2", "Vuetify", "Vuex", "Saas", "Responsive Design"],
+    "features": [
+      "Modern responsive UI",
+      "Memberhip (upgrades, downgrades)",
+      "Payments",
+      "Coupon Discounts",
+      "User level permissions",
+      "Store products purchasing",
+      "Shipstation Order Creation",
+      "Blogs",
+      "Google Translator to change website specific language",
+      "Certificates",
+      "Newsletters",
+      "Seminars registrations",
+      "Testimonials",
+      "Forums",
+      "User Profile",
+      "Separate Admin Panel project",
+      "Optimized performance"
+    ],
     "details": "Full project details for IBA",
     "url": "https://bodytalksystem.com/"
   },
@@ -36,6 +95,17 @@
     "title": "LUXECLUB",
     "description": "Front-end assessment project.",
     "image": "/portfolio_imgs/fsd-assessment.png",
+    "images": [
+      "/portfolio_imgs/fsd-assessment4.png",
+      "/portfolio_imgs/fsd-assessment3.png",
+      "/portfolio_imgs/fsd-assessment2.png"
+    ],
+    "technologies": ["React", "Tailwind CSS", "Responsive Design"],
+    "features": [
+      "Modern responsive UI",
+      "Travel bookings",
+      "Optimized performance"
+    ],
     "details": "Full project details for LUXECLUB.",
     "url": "https://fsd-assessment-j8yn.vercel.app/"
   },
@@ -44,6 +114,17 @@
     "title": "CloudHub",
     "description": "Cloud service dashboard UI.",
     "image": "/portfolio_imgs/cloudhub.png",
+    "images": [
+      "/portfolio_imgs/cloudhub.png",
+      "/portfolio_imgs/cloudhub3.png",
+      "/portfolio_imgs/cloudhub2.png"
+    ],
+    "technologies": ["Vue", "Vuetify", "Responsive Design"],
+    "features": [
+      "Modern responsive UI",
+      "Animations",
+      "Optimized performance"
+    ],
     "details": "Full project details for CloudHub.",
     "url": "https://cloudhubb.netlify.app/"
   },
@@ -52,6 +133,17 @@
     "title": "Otis Kit Pro",
     "description": "Product landing page design.",
     "image": "/portfolio_imgs/otis-kit-pro.png",
+    "images": [
+      "/portfolio_imgs/otis-kit-pro.png",
+      "/portfolio_imgs/otis-kit-pro3.png",
+      "/portfolio_imgs/otis-kit-pro4.png"
+    ],
+    "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    "features": [
+      "Modern responsive UI",
+      "Flipping card",
+      "Optimized performance"
+    ],
     "details": "Full project details for Otis Kit Pro.",
     "url": "https://otis-kit-pro.netlify.app/"
   }

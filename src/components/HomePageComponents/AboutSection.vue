@@ -37,7 +37,8 @@
           </p>
           <div class="flex justify-start">
               <button
-                class="border border-[#00A8CD] text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
+                class="text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
+                style="border:1px solid #00A8CD !important"
                 onclick="window.location.href='/EhsanResumeB.pdf'"
                 >
                 Download CV
@@ -50,7 +51,7 @@
     <h3 class="text-3xl md:text-4xl font-bold text-[#00A8CD] mb-6 text-center">
         Skills
     </h3>
-    <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-8 mt-6">
+    <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-7 lg:w-[90%] xl:w-[80%] mx-auto gap-8 mt-6">
       <div v-for="skill in skills" :key="skill.name" class="space-y-2">
         <!-- Rounded Loading Bar -->
         <!-- <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
