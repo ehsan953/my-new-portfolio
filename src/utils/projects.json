@@ -135,8 +135,8 @@
     "image": "/portfolio_imgs/otis-kit-pro.png",
     "images": [
       "/portfolio_imgs/otis-kit-pro.png",
-      "/portfolio_imgs/otis-kit-pro3.png",
-      "/portfolio_imgs/otis-kit-pro4.png"
+      "/portfolio_imgs/otis-kit-pro3.PNG",
+      "/portfolio_imgs/otis-kit-pro4.PNG"
     ],
     "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design"],
     "features": [
