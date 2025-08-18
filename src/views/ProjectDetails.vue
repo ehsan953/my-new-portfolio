@@ -13,7 +13,7 @@
           :key="'img-' + index"
           :src="img"
           :alt="`${project.title} screenshot ${index + 1}`"
-          class="w-full h-auto object-cover rounded-lg shadow-lg"
+          class="w-full h-auto object-cover rounded-lg shadow-lg hover:cursor-pointer"
           @click="openImage(img)"
         />
 
