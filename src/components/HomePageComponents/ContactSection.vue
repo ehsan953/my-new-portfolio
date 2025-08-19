@@ -33,6 +33,13 @@
               />
             </div>
             <div>
+              <input
+                v-model="form.phone"
+                placeholder="WhatsApp (Optional)"
+                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] outline-none text-white"
+              />
+            </div>
+            <div>
               <textarea
                 v-model="form.message"
                 placeholder="Your Message"
@@ -117,6 +124,7 @@
 
 <script>
 import { defineComponent } from "vue";
+import emailjs from "emailjs-com";
 
 export default defineComponent({
   name: "ContactUsSection",
@@ -129,6 +137,7 @@ export default defineComponent({
         name: "",
         email: "",
         message: "",
+        phone: ""
       },
       socialLinks: [
         {
@@ -155,11 +164,29 @@ export default defineComponent({
     };
   },
   methods: {
-    submitForm() {
-      alert(`Thank you, ${this.form.name}! Your message has been sent.`);
-      this.form.name = "";
-      this.form.email = "";
-      this.form.message = "";
+    async submitForm() {
+      try {
+        await emailjs.send(
+          "service_124hiun",
+          "template_wdmthwj",
+          {
+            from_name: this.form.name,
+            from_email: this.form.email,
+            message: this.form.message,
+            phone: this.form.phone,
+          },
+          "hPUyyd4qa01C_ik8r"
+        );
+
+        alert("Message sent successfully!");
+        this.form.name = "";
+        this.form.email = "";
+        this.form.message = "";
+        this.form.phone = "";
+      } catch (error) {
+        console.error(error);
+        alert("Failed to send message. Please try again.");
+      }
     },
   },
 });
