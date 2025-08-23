@@ -2,8 +2,8 @@
   <section class="py-16 bg-black text-white">
     <!-- Section Header -->
     <div class="text-center mb-12">
-      <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-4">My Services</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto px-2">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">My Services</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto px-2 text-lg">
         I help businesses and individuals with modern web solutions, creating responsive, interactive, and high-performance websites and applications.
       </p>
     </div>
@@ -13,7 +13,7 @@
       <div 
         v-for="service in services" 
         :key="service.title" 
-        class="bg-gray-900 p-6 rounded-lg text-center hover:shadow-lg hover:shadow-[#00A8CD]/50 transition"
+        class="border-2 border-gray-800 bg-gray-900 p-6 rounded-lg text-center hover:shadow-lg hover:shadow-[#00A8CD]/50 transition"
       >
         <!-- Icon -->
         <i :class="service.iconClass" class="text-4xl mb-4 text-[#00A8CD]"></i>
@@ -23,6 +23,7 @@
         <p class="text-gray-400">{{ service.description }}</p>
       </div>
     </div>
+    
   </section>
 </template>
 

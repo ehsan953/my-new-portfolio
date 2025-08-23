@@ -4,8 +4,8 @@
 
       <!-- Section Title -->
       <div class="text-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-4">{{ heading }}</h2>
-        <p class="text-gray-400 max-w-3xl mx-auto">{{ description }}</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">{{ heading }}</h2>
+        <p class="text-gray-400 max-w-3xl mx-auto text-lg">{{ description }}</p>
       </div>
 
       <!-- Projects Grid -->

@@ -2,24 +2,24 @@
   <section class="py-20 bg-black text-white">
     <div class="max-w-7xl mx-auto px-6 space-y-12">
       <!-- Section Title -->
-      <div class="text-center space-y-2">
-        <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD]">
+      <div class="text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">
           {{ heading }}
         </h2>
-        <p class="text-gray-400 max-w-3xl mx-auto">{{ description }}</p>
+        <p class="text-gray-400 max-w-3xl mx-auto text-lg">{{ description }}</p>
       </div>
 
       <!-- Contact Content -->
       <div class="flex flex-col md:flex-row gap-8">
         <!-- Contact Form -->
-        <div class="basis-1/2 bg-gray-900 rounded-xl p-8 shadow-lg">
+        <div class="basis-1/2 bg-gray-900 rounded-xl p-8 shadow-lg border-2 border-[#00A8CD]">
           <form @submit.prevent="submitForm" class="space-y-6">
             <div>
               <input
                 v-model="form.name"
                 type="text"
                 placeholder="Your Name"
-                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] outline-none text-white"
+                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] focus:ring-2 focus:ring-[#00A8CD] outline-none text-white"
                 required
               />
             </div>
@@ -28,7 +28,7 @@
                 v-model="form.email"
                 type="email"
                 placeholder="Your Email"
-                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] outline-none text-white"
+                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] focus:ring-2 focus:ring-[#00A8CD] outline-none text-white"
                 required
               />
             </div>
@@ -36,7 +36,7 @@
               <input
                 v-model="form.phone"
                 placeholder="WhatsApp (Optional)"
-                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] outline-none text-white"
+                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] focus:ring-2 focus:ring-[#00A8CD] outline-none text-white"
               />
             </div>
             <div>
@@ -44,7 +44,7 @@
                 v-model="form.message"
                 placeholder="Your Message"
                 rows="5"
-                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] outline-none text-white"
+                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00A8CD] focus:ring-2 focus:ring-[#00A8CD] outline-none text-white"
                 required
               ></textarea>
             </div>
@@ -63,7 +63,7 @@
           <!-- Info Cards -->
           <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-6">
             <div
-              class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition"
+              class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
             >
               <i class="fas fa-envelope text-[#00A8CD] text-2xl mt-1"></i>
               <div class="text-left break-words">
@@ -73,7 +73,7 @@
             </div>
 
             <div
-              class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition"
+              class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
             >
               <i class="fas fa-phone-alt text-[#00A8CD] text-2xl mt-1"></i>
               <div class="text-left">
@@ -83,7 +83,7 @@
             </div>
 
             <div
-              class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition"
+              class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
             >
               <i class="fas fa-map-marker-alt text-[#00A8CD] text-2xl mt-1"></i>
               <div class="text-left">
@@ -91,7 +91,7 @@
                 <p class="text-gray-300">Lahore, Pakistan</p>
               </div>
             </div>
-            <div class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition">
+            <div class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800">
                 <i class="fas fa-comment-dots text-[#00A8CD] text-2xl mt-1"></i>
                 <div class="text-left">
                     <h4 class="text-[#00A8CD] font-semibold">Message</h4>
@@ -108,7 +108,7 @@
               :href="link.url"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-tr from-gray-800 to-gray-900 hover:from-[#00A8CD] hover:to-[#00A8CD] transition transform hover:scale-110 shadow-lg"
+              class="border-2 border-[#00A8CD] w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-tr from-gray-800 to-gray-900 hover:from-[#00A8CD] hover:to-[#00A8CD] transition transform hover:scale-110 shadow-lg"
             >
               <i
                 :class="link.iconClass"
@@ -178,14 +178,30 @@ export default defineComponent({
           "hPUyyd4qa01C_ik8r"
         );
 
-        alert("Message sent successfully!");
+        this.$swal.fire({
+          toast: true,
+          position: "top-end",
+          icon: "success",
+          title: "Message sent successfully!",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+        // alert("Message sent successfully!");
         this.form.name = "";
         this.form.email = "";
         this.form.message = "";
         this.form.phone = "";
       } catch (error) {
         console.error(error);
-        alert("Failed to send message. Please try again.");
+        // alert("Failed to send message. Please try again.");
+        this.$swal.fire({
+          toast: true,
+          position: "top-end",
+          icon: "error",
+          title: "Failed to send message. Please try again.",
+          showConfirmButton: false,
+          timer: 3000,
+        });
       }
     },
   },

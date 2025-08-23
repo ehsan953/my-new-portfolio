@@ -4,8 +4,8 @@
       
       <!-- Title + Description -->
       <div class="text-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-4">{{ heading }}</h2>
-        <p class="text-gray-400 max-w-3xl mx-auto">{{ description }}</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">{{ heading }}</h2>
+        <p class="text-gray-400 max-w-3xl mx-auto text-lg">{{ description }}</p>
       </div>
 
       <!-- Image + Text Flex -->
@@ -31,7 +31,6 @@
 
             I am passionate about learning new technologies and continuously improving my skill set. 
             I take pride in writing clean, maintainable code while adhering to best practices and modern development standards.<br/>
-            Collaboration, problem-solving, and attention to detail are at the core of how I approach projects, ensuring that every application I work on is both functional and user-friendly.<br/>
 
             Whether it’s building responsive layouts, integrating APIs, or optimizing performance, I strive to create solutions that meet user needs and business goals effectively.
           </p>
@@ -48,10 +47,10 @@
         </div>
         
     </div>
-    <h3 class="text-3xl md:text-4xl font-bold text-[#00A8CD] mb-6 text-center">
+    <h3 class="text-3xl md:text-4xl font-bold text-[#00A8CD] mb-12 text-center">
         Skills
     </h3>
-    <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-7 lg:w-[90%] xl:w-[80%] mx-auto gap-8 mt-6">
+    <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-7 lg:w-[90%] mx-auto gap-8 mt-6">
       <div v-for="skill in skills" :key="skill.name" class="space-y-2">
         <!-- Rounded Loading Bar -->
         <!-- <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">

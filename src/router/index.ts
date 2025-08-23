@@ -5,7 +5,10 @@ import AboutView from '../views/AboutView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import PortfolioView from '../views/PortfolioView.vue'
 import ContactView from '../views/ContactView.vue'
+import BlogView from '../views/BlogView.vue'
 import PortfolioDetailView from '../views/ProjectDetails.vue'
+import AdminLogin from '../views/Admin/AdminLogin.vue'
+import AdminDashboard from '../views/Admin/AdminDashboard.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -41,6 +44,21 @@ const routes: Array<RouteRecordRaw> = [
         path: '/contact',
         name: 'contact',
         component: ContactView
+      },
+      {
+        path: '/blogs',
+        name: 'blogs',
+        component: BlogView
+      },
+      {
+        path: '/admin',
+        name: 'admin',
+        component: AdminLogin
+      },
+      {
+        path: '/admin/dashboard',
+        name: 'dashboard',
+        component: AdminDashboard
       },
     ]
   }
