@@ -95,6 +95,7 @@ export default defineComponent({
         { name: 'About', path: '/about' },
         { name: 'Services', path: '/services' },
         { name: 'Portfolio', path: '/portfolio' },
+        { name: 'Blog', path: '/blogs' },
         // { name: 'Contact', path: '/contact' }
       ]
     }

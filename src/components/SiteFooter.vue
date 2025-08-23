@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-white text-center px-4 py-8">
+  <footer class="bg-gray-900 text-white text-center px-4 py-8 border-t-2 border-gray-800">
     <!-- Logo Row -->
     <div class="mb-6 flex justify-center">
       <router-link to="/" class="flex items-center space-x-2 w-[310px] h-[90px]">
@@ -31,7 +31,7 @@
         :href="icon.url"
         target="_blank"
         rel="noopener noreferrer"
-        class="hover:text-[#00A8CD] transition-colors"
+        class="hover:text-[#00A8CD] transition-colors "
       >
         <i :class="icon.iconClass" class="text-2xl"></i>
       </a>
@@ -77,7 +77,8 @@ export default defineComponent({
         { name: 'About', path: '/about' },
         { name: 'Services', path: '/services' },
         { name: 'Portfolio', path: '/portfolio' },
-        { name: 'Contact', path: '/contact' }
+        { name: 'Contact', path: '/contact' },
+        { name: 'Blog', path: '/blogs' },
       ],
       socialLinks: [
         { name: 'GitHub', url: 'https://github.com/ehsan953', iconClass: 'fab fa-github' },
