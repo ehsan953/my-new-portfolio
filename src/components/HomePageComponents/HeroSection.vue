@@ -5,7 +5,7 @@
     <!-- Background Image + Overlay -->
     <div
       class="hidden md:block absolute inset-0 bg-cover bg-center"
-      style="background-image:url('/blog-bg.jpg')"
+      style="background-image:url('/1719419702bg.jpg')"
     ></div>
     <div class="absolute inset-0 bg-black/80"></div>
 
@@ -89,13 +89,13 @@
 
     <!-- Floating Shapes -->
     <div
-      class="absolute top-32 md:top-24 left-5 sm:left-24 w-8 sm:w-14 h-8 sm:h-14 border-2 border-[#00A8CD] rounded-full backdrop-blur-md bg-[#00A8CD]/10 animate-float"
+      class="absolute top-32 hidden sm:block md:top-24 left-5 sm:left-24 w-8 sm:w-14 h-8 sm:h-14 border-2 border-[#00A8CD] rounded-full backdrop-blur-md bg-[#00A8CD]/10 animate-float"
     ></div>
     <div
-      class="absolute top-44 right-12 sm:top-36 md:top-36 sm:right-32 md:right-24 lg:right-32 w-6 h-6 sm:w-8 sm:h-8 border-2 border-cyan-400 rounded-md rotate-12 animate-spinSlow"
+      class="absolute hidden sm:block top-44 right-12 sm:top-36 md:top-36 sm:right-32 md:right-24 lg:right-32 w-6 h-6 sm:w-8 sm:h-8 border-2 border-cyan-400 rounded-md rotate-12 animate-spinSlow"
     ></div>
     <div
-      class="absolute bottom-20 md:bottom-12 lg:bottom-20 right-24 w-16 h-16 lg:w-20 lg:h-20 bg-[#00A8CD]/20 backdrop-blur-xl rounded-xl animate-floatSlow"
+      class="absolute hidden sm:block bottom-20 md:bottom-12 lg:bottom-20 right-24 w-16 h-16 lg:w-20 lg:h-20 bg-[#00A8CD]/20 backdrop-blur-xl rounded-xl animate-floatSlow"
     ></div>
 
     <!-- Extra Particles -->

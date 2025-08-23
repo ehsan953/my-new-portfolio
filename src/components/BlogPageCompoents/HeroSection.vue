@@ -5,7 +5,7 @@
     <!-- Background image with overlay -->
     <div
       class="absolute inset-0 bg-cover bg-center"
-      style="background-image:url('/1719419702bg.jpg')"
+      style="background-image:url('/blog-bg.jpg')"
     ></div>
     <div class="absolute inset-0 bg-black/80"></div>
 
