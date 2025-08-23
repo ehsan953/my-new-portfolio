@@ -2,13 +2,13 @@
   <div class="home">
     <HeroSection/>
     <ServicesSection/>
-    <v-divider class="my-2 w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
+    <v-divider class="my-2 w-1/2 md:w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
     <AboutSection/>
-    <v-divider class="my-2 w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
+    <v-divider class="my-2 w-1/2 md:w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
     <PortfolioSection/>
-    <v-divider class="my-2 w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
+    <v-divider class="my-2 w-1/2 md:w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
     <BlogSection/>
-    <v-divider class="my-2 w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
+    <v-divider class="my-2 w-1/2 md:w-1/4 mx-auto" style="border-top:3px solid #00d1ff"></v-divider>
     <ContactUsSection/>
   </div>
 </template>
