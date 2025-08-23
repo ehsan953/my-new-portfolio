@@ -50,15 +50,15 @@
 
     <!-- Floating Shapes -->
     <div
-      class="absolute top-24 left-20 w-14 h-14 border-2 border-[#00A8CD] rounded-full backdrop-blur-md bg-[#00A8CD]/10 animate-float"
+      class="absolute top-24 left-20 w-12 h-12 sm:w-14 sm:h-14 border-2 border-[#00A8CD] rounded-full backdrop-blur-md bg-[#00A8CD]/10 animate-float"
     ></div>
 
     <div
-      class="absolute top-36 right-32 w-8 h-8 border-2 border-cyan-400 rounded-md rotate-12 animate-spinSlow"
+      class="absolute hidden sm:block sm:top-36 sm:right-32 w-8 h-8 border-2 border-cyan-400 rounded-md rotate-12 animate-spinSlow"
     ></div>
 
     <div
-      class="absolute bottom-20 right-24 lg:right-64 lg:bottom-10 w-20 h-20 bg-[#00A8CD]/20 backdrop-blur-xl rounded-xl animate-floatSlow"
+      class="absolute bottom-16 right-16 lg:right-64 lg:bottom-10 w-20 h-20 bg-[#00A8CD]/20 backdrop-blur-xl rounded-xl animate-floatSlow"
     ></div>
 
     <!-- Extra Particles -->
