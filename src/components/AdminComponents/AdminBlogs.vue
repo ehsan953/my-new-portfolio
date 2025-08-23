@@ -256,7 +256,7 @@ export default defineComponent({
         author: this.newBlog.author,
         date: new Date().toISOString().split("T")[0],
         status: "Active",
-        image: this.newBlog.imagePreview,
+        image: this.newBlog.imagePreview || "",
       });
 
       this.newBlog = { title: "", author: "", coverImage: null, content: "", imagePreview: null };
