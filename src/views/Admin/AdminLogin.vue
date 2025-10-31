@@ -54,6 +54,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "@/utils/firebaseConfig";
 
 export default defineComponent({
   name: "AdminLogin",
@@ -66,21 +68,33 @@ export default defineComponent({
   },
   methods: {
     async handleLogin() {
-      if (!this.email || !this.password) {
-        this.errorMessage = "Please enter both email and password.";
-        return;
-      }
-
-      // 🔒 In future: integrate Firebase Auth here
-      // For now just simulate login
-      if (this.email === "muhammadehsanhassan781@gmail.com" && this.password === "ehsan@7656") {
-        this.errorMessage = "";
-        alert("Login successful! 🚀 (Later this will redirect to Admin Dashboard)");
+      this.errorMessage = "";
+      try {
+        const userCredential = await signInWithEmailAndPassword(
+          auth,
+          this.email,
+          this.password
+        );
+        console.log("✅ Logged in user:", userCredential.user);
         this.$router.push("/admin/dashboard");
-      } else {
-        this.errorMessage = "Invalid email or password.";
+      } catch (error: any) {
+        console.error(error);
+        switch (error.code) {
+          case "auth/invalid-email":
+            this.errorMessage = "Invalid email format.";
+            break;
+          case "auth/user-not-found":
+            this.errorMessage = "No user found with this email.";
+            break;
+          case "auth/wrong-password":
+            this.errorMessage = "Incorrect password.";
+            break;
+          default:
+            this.errorMessage = "Login failed. Please try again.";
+        }
       }
     }
   }
 });
 </script>
+
