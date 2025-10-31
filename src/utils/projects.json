@@ -184,49 +184,5 @@
     ],
     "details": "Full project details for my prtfolio.",
     "url": "https://ehsan-portfolio-one-beta.vercel.app/"
-  },
-  {
-    "id": 10,
-    "title": "My Previous Portfolio",
-    "description": "My previous responsive PHP Portfolio",
-    "image": "/portfolio_imgs/my-php-portfolio.png",
-    "images": [
-      "/portfolio_imgs/my-php-portfolio.png",
-      "/portfolio_imgs/my-php-portfolio2.png",
-      "/portfolio_imgs/my-php-portfolio3.png"
-    ],
-    "technologies": ["HTML", "CSS", "PHP", "SQL", "XAMPP" , "Responsive Design"],
-    "features": [
-      "Modern responsive UI",
-      "Social Medias",
-      "Resume",
-      "Portfolio",
-      "Optimized performance"
-    ],
-    "details": "Full project details for my previous PHP Prtfolio.",
-    "url": "https://ehsanportfolio.infinityfreeapp.com/"
-  },
-  {
-    "id": 11,
-    "title": "My Portfolio Admin Panel",
-    "description": "My PHP Portfolio Admin Panel",
-    "image": "/portfolio_imgs/php-portfolio-admin.png",
-    "images": [
-      "/portfolio_imgs/php-portfolio-admin.png",
-      "/portfolio_imgs/php-portfolio-admin2.png",
-      "/portfolio_imgs/php-portfolio-admin3.png"
-    ],
-    "technologies": ["HTML", "CSS", "PHP", "SQL", "XAMPP" , "Responsive Design"],
-    "features": [
-      "Section Controls",
-      "Add/Edit/Delete About Details",
-      "Add/Edit/Delete Social Medias",
-      "Add/Edit/Delete Peojects, Educations, Certifications in Resume",
-      "Add/Edit/Delete Skills",
-      "Add/Edit/Delete Projects in Portfolio",
-      "Optimized performance"
-    ],
-    "details": "Full project details for my PHP Prtfolio Admin Panel.",
-    "url": "https://ehsanportfolio.infinityfreeapp.com/"
   }
 ]
