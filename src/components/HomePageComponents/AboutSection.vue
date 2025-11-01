@@ -116,7 +116,7 @@ export default defineComponent({
     return {
       heading: "About Me",
       description: "I am Muhammad Ehsan, a passionate software developer building responsive, interactive, and high-performance web applications.",
-      image: "/ehsan.png", // replace with your full-length image path
+      image: "/ehsan3.jpg", // replace with your full-length image path
       aboutText: ``,
       skills: [
         { name: "HTML", percentage: 95 },
