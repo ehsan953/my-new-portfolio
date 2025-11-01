@@ -21,7 +21,7 @@
           <!-- Image -->
           <div class="relative h-48 overflow-hidden">
             <img
-              :src="blog.image"
+              :src="blog.image || '/blog_imgs/blog-default-img2.png'"
               :alt="blog.title"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
@@ -36,7 +36,7 @@
             <p class="text-gray-400 text-sm mb-4 line-clamp-3">
               {{ blog.description }}
             </p>
-            <router-link to="/blogs"
+            <router-link :to="`/blogs/${blog.id}`"
               class="inline-block text-cyan-400 font-medium hover:underline"
             >
               Read More →
@@ -60,35 +60,32 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
+import { db } from "@/utils/firebaseConfig";
 
 export default defineComponent({
   name: "BlogSection",
   data() {
     return {
-      blogs: [
-        {
-          title: "Mastering Vue 3 Composition API",
-          description:
-            "Learn how to use the Composition API to write cleaner and more scalable Vue.js applications.",
-          image: "/blog_imgs/blog-bg.jpg",
-          link: "/blogs/vue-composition-api",
-        },
-        {
-          title: "10 Tailwind CSS Tricks You Should Know",
-          description:
-            "Speed up your workflow and create stunning designs with these Tailwind CSS tips and tricks.",
-          image: "/blog_imgs/blog2.png",
-          link: "/blogs/tailwind-tips",
-        },
-        {
-          title: "Deploying Apps with Vercel",
-          description:
-            "A step-by-step guide to deploying modern web apps on Vercel with ease and speed.",
-          image: "/blog_imgs/blog3.jpg",
-          link: "/blogs/deploy-vercel",
-        },
-      ],
+      blogs: [] as any[],
     };
+  },
+  async mounted() {
+    await this.fetchBlogs();
+  },
+  methods: {
+    async fetchBlogs() {
+      try {
+        const q = query(collection(db, "blogs"), orderBy("date", "desc"), limit(3));
+        const querySnapshot = await getDocs(q);
+        this.blogs = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      }
+    },
   },
 });
 </script>
