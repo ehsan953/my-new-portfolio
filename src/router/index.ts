@@ -51,6 +51,11 @@ const routes: Array<RouteRecordRaw> = [
         component: BlogView
       },
       {
+        path: '/blogs/:id',
+        name: 'BlogDetails',
+        component: () => import('../views/BlogDetails.vue')
+      },
+      {
         path: '/admin',
         name: 'admin',
         component: AdminLogin
