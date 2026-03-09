@@ -36,8 +36,10 @@
       </div>
 
       <!-- Description -->
-      <p class="text-gray-300">{{ project.details }}</p>
-
+      <p class="text-gray-300 text-left" v-html="project.details"></p>
+      <br/>
+      <!-- Goal -->
+      <p class="text-gray-300 text-left mt-0" v-html="project.goal"></p>
       <!-- Technologies -->
       <div v-if="project.technologies && project.technologies.length" class="text-left">
         <h3 class="text-2xl font-semibold text-[#00A8CD] mt-6 mb-2">Technologies Used</h3>
@@ -57,6 +59,7 @@
           </li>
         </ul>
       </div>
+
     </div>
     <!-- Image Dialog -->
     <v-dialog v-model="dialog" max-width="1400px">
