@@ -1,27 +1,33 @@
 [
   {
     "id": 1,
-    "title": "Omnifood",
-    "description": "Food delivery app UI.",
-    "image": "/portfolio_imgs/omnifood-thumbnail.png",
+    "title": "Legacy Solutions LLC",
+    "description": "Responsive Landing Page Clone with Animations",
+    "image": "/portfolio_imgs/legacy-thumbnail.png",
     "images": [
-      "/portfolio_imgs/omnifood-thumbnail.png",
-      "/portfolio_imgs/omnifood2.png",
-      "/portfolio_imgs/omnifood3.png"
+      "/portfolio_imgs/legacy-thumbnail.png",
+      "/portfolio_imgs/legacy-solution3.png",
+      "/portfolio_imgs/legacy-solution2.png"
     ],
-    "technologies": ["HTML", "CSS", "Responsive Design"],
+    "technologies": ["Vue", "Tailwind CSS", "Vuex", "Responsive Design"],
     "features": [
-      "Modern responsive UI",
-      "Interactive food ordering",
-      "Optimized performance"
+      "Pixel-accurate layout matching the original design",
+      "Fully responsive across mobile, tablet, and desktop devices",
+      "Smooth and engaging scroll-based animations",
+      "Optimized typography and font matching",
+      "Clean and scalable Vue component structure",
+      "Functional CTA buttons with smooth scrolling to form sections",
+      "Custom FAQ section and legal pages integration",
+      "SEO-friendly and lightweight frontend implementation"
     ],
-    "details": "Full project details for Omnifood, including technologies used and features.",
-    "url": "https://omnifood-ahsan.netlify.app/"
+    "details": "This project involved developing a fully responsive and high-performance landing page based on a reference design. The website was built using Vue.js and Tailwind CSS, ensuring clean structure, fast performance, and modern UI styling.",
+    "goal": "The goal was to create a visually appealing and highly functional landing page that accurately reflects the brand and provides an excellent user experience across all devices.",
+    "url": "https://legacy-solutions.vercel.app/"
   },
   {
     "id": 2,
     "title": "Omegus Prime",
-    "description": "Software Company site.",
+    "description": "Figma to Website with Test Cases & SEO",
     "image": "/portfolio_imgs/omegusprime.png",
     "images": [
       "/portfolio_imgs/omegusprime.png",
@@ -30,31 +36,46 @@
     ],
     "technologies": ["Vue 3", "Vuex", "TypeScript", "Tailwind CSS", "Responsive Design", "SEO", "Unit Test Cases"],
     "features": [
-      "Modern responsive UI",
-      "Optimized performance"
+      "Figma design converted into a fully functional website",
+      "Clean, scalable, and maintainable code structure",
+      "Fully responsive layout across mobile, tablet, and desktop",
+      "SEO-optimized codebase for improved search visibility",
+      "Unit testing implementation for code reliability",
+      "Detailed test cases to ensure functionality and stability",
+      "Optimized UI/UX for better user engagement",
+      "Performance-focused frontend development"
     ],
-    "details": "Full project details for Omegus Prime.",
+    "details": "This project involved designing and developing a modern business website from the ground up. The process started with translating the UI design from Figma into a fully functional and responsive website. <br/><br/> Beyond frontend development, I also implemented proper software engineering practices including test case writing, unit testing, and codebase SEO optimization to ensure the website performs well both technically and in search engines.",
+    "goal": "The goal was to deliver a professional, scalable, and SEO-friendly website built with strong development standards and testing practices.",
     "url": "https://omegusprime.com/"
   },
   {
     "id": 3,
     "title": "CodeSyncs",
-    "description": "CodeSyncs company site",
+    "description": "Full Stack Company Website with Firebase & Figma Design",
     "image": "/portfolio_imgs/codesyncs.PNG",
     "images": [
       "/portfolio_imgs/codesyncs.PNG",
       "/portfolio_imgs/codesyncs2.PNG",
       "/portfolio_imgs/codesyncs3.PNG"
     ],
-    "technologies": ["React", "Firebase", "Tailwind CSS", "Responsive Design"],
+    "technologies": ["Figma to Code","React", "Firebase", "Tailwind CSS", "Responsive Design"],
     "features": [
-      "Modern responsive UI",
+      "Pixel-perfect conversion from Figma design",
+      "Fully responsive layout across mobile, tablet, and desktop",
+      "Modern and clean UI tailored for a software company",
+      "Full-stack development with Firebase backend integration",
+      "Optimized component structure and scalable codebase",
+      "Smooth navigation and interactive user interface",
+      "Performance-focused frontend implementation",
       "Blog and Jobs Postings",
       "Admin authorization via Firebase",
       "Storing data for Blogs & Jobs using Firebase",
-      "Optimized performance"
+      "Optimized performance",
+      "Animations"
     ],
-    "details": "Full project details for CodeSyncs",
+    "details": "This project involved designing and developing a modern software company website from concept to deployment. The website was built by converting the original Figma design into a fully functional and responsive web application with a pixel-perfect layout. <br/><br/>The project also included full-stack development using Firebase for backend services, enabling dynamic functionality and scalable data management.",
+    "goal": "The goal was to deliver a professional company website that reflects strong branding, modern design standards, and reliable backend functionality.",
     "url": "https://www.codesyncs.com/"
   },
   {
@@ -88,31 +109,36 @@
       "Optimized performance"
     ],
     "details": "Full project details for IBA",
+    "goal": "The goal was to create a comprehensive platform for the International BodyTalk Association that facilitates member engagement, provides educational resources, and supports the organization's mission.",
     "url": "https://bodytalksystem.com/"
   },
   {
     "id": 5,
     "title": "LUXECLUB",
-    "description": "Front-end assessment project.",
+    "description": "Travel Company Website – Frontend Design | Figma",
     "image": "/portfolio_imgs/fsd-assessment.png",
     "images": [
       "/portfolio_imgs/fsd-assessment4.png",
       "/portfolio_imgs/fsd-assessment3.png",
       "/portfolio_imgs/fsd-assessment2.png"
     ],
-    "technologies": ["React", "Tailwind CSS", "Responsive Design"],
+    "technologies": ["Figma to Code", "React", "Tailwind CSS", "Responsive Design"],
     "features": [
-      "Modern responsive UI",
-      "Travel bookings",
-      "Optimized performance"
+      "Pixel-perfect conversion from Figma design",
+      "Fully responsive layout across mobile, tablet, and desktop",
+      "Modern and clean UI tailored for a travel company",
+      "Interactive components for better user experience",
+      "Optimized frontend code structure for scalability",
+      "Smooth navigation and performance-focused implementation"
     ],
-    "details": "Full project details for LUXECLUB.",
+    "details": "This project involved designing and developing the frontend of a modern travel company website from a Figma design. The website was built by converting the original Figma layout into a fully functional, responsive web application with a pixel-perfect layout.",
+    "goal": "The goal was to deliver a professional and visually appealing travel website that showcases destinations, services, and user engagement effectively.",
     "url": "https://fsd-assessment-j8yn.vercel.app/"
   },
   {
     "id": 6,
     "title": "CloudHub",
-    "description": "Cloud service dashboard UI.",
+    "description": "CloudHubb Website – Figma to Responsive Frontend",
     "image": "/portfolio_imgs/cloudhub.png",
     "images": [
       "/portfolio_imgs/cloudhub.png",
@@ -121,17 +147,23 @@
     ],
     "technologies": ["Vue", "Vuetify", "Responsive Design"],
     "features": [
-      "Modern responsive UI",
-      "Animations",
-      "Optimized performance"
+      "Pixel-perfect conversion from Figma design",
+      "Fully responsive layout for mobile, tablet, and desktop",
+      "Modern and professional UI for a cloud services company",
+      "Smooth animations and interactive elements for enhanced user experience",
+      "Optimized frontend code structure for scalability",
+      "Clean component-based implementation",
+      "Performance-focused frontend development",
+      "Animations"
     ],
-    "details": "Full project details for CloudHub.",
+    "details": "This project involved developing the frontend of a modern cloud services company website by converting a Figma design into a fully responsive and functional web application.<br/><br/>The focus of the project was to deliver a pixel-perfect UI, smooth user experience, and clean frontend architecture while ensuring the website performs well across different devices and screen sizes.",
+    "goal": "The goal was to create a professional and visually engaging company website that clearly presents cloud services while maintaining modern design standards and usability.",
     "url": "https://cloudhubb.netlify.app/"
   },
   {
     "id": 7,
     "title": "Otis Kit Pro",
-    "description": "Product landing page design.",
+    "description": "Modern Responsive SaaS Website Clone with Tailwind CSS",
     "image": "/portfolio_imgs/otis-kit-pro.png",
     "images": [
       "/portfolio_imgs/otis-kit-pro.png",
@@ -140,15 +172,69 @@
     ],
     "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design"],
     "features": [
-      "Modern responsive UI",
-      "Flipping card",
-      "Optimized performance"
+      "Fully responsive design (mobile, tablet, desktop)",
+      "Modern SaaS landing page layout",
+      "Interactive 3D card UI effect",
+      "Clean and scalable Tailwind CSS structure",
+      "Smooth animations and hover effects",
+      "Optimized UI for product presentation"
     ],
-    "details": "Full project details for Otis Kit Pro.",
+    "details": "I designed and developed a modern SaaS-style landing page using Tailwind CSS with a clean UI and engaging visual effects.<br/><br/>The landing page features a flipping card effect to showcase product features in an interactive way, along with a fully responsive design that ensures optimal viewing across all devices. The project focuses on delivering a visually appealing and user-friendly experience while maintaining high performance.",
+    "goal": "The goal was to create a modern, visually appealing landing page that effectively communicates the value proposition of the Otis Kit Pro product and drives conversions.",
     "url": "https://otis-kit-pro.netlify.app/"
   },
   {
     "id": 8,
+    "title": "Omnifood",
+    "description": "Modern Responsive Food Delivery Restaurant Design",
+    "image": "/portfolio_imgs/omnifood-thumbnail.png",
+    "images": [
+      "/portfolio_imgs/omnifood-thumbnail.png",
+      "/portfolio_imgs/omnifood2.png",
+      "/portfolio_imgs/omnifood3.png"
+    ],
+    "technologies": ["HTML", "CSS", "Responsive Design"],
+    "features": [
+      "Fully responsive design across mobile, tablet, and desktop",
+      "Modern landing page layout with clear content sections",
+      "Smooth scrolling navigation and interactive UI elements",
+      "Optimized images and typography for better performance and readability",
+      "Clean and maintainable code structure",
+      "Pricing plans, testimonials, and call-to-action sections to enhance user engagement and conversions"
+    ],
+    "details": "This project is a modern and fully responsive landing page developed for a fictional food delivery service. The goal of the project was to create a visually appealing and conversion-focused website that highlights healthy meal subscriptions and an easy ordering experience.<br/><br/>The landing page features a clean layout, smooth scrolling sections, and well-structured UI components designed to enhance user engagement and readability. The design focuses on showcasing meal options, subscription plans, testimonials, and a simple signup form to encourage conversions.",
+    "goal": "The goal was to create a modern, user-friendly food delivery app that provides a seamless ordering experience and showcases a wide variety of delicious meals. This project demonstrates my ability to build professional landing pages with a strong focus on responsive design and user experience.",
+    "url": "https://omnifood-ahsan.netlify.app/"
+  },
+  {
+    "id": 9,
+    "title": "My Portfolio",
+    "description": "Portfolio Website | Figma to Code & Firebase",
+    "image": "/portfolio_imgs/portfolio-thumbnail.png",
+    "images": [
+      "/portfolio_imgs/my-new-portfolio.png",
+      "/portfolio_imgs/my-new-portfolio2.png",
+      "/portfolio_imgs/my-new-portfolio4.png"
+    ],
+    "technologies": ["Vue", "Tailwind CSS", "Vuex", "Responsive Design"],
+    "features": [
+      "Pixel-perfect conversion from Figma design",
+      "Download CV",
+      "Social Medias",
+      "Fully responsive layout across mobile, tablet, and desktop",
+      "Modern and clean UI tailored for a personal portfolio",
+      "Dynamic blog management using Firebase backend",
+      "Optimized frontend code structure for scalability",
+      "Smooth navigation with interactive UI elements",
+      "Performance-focused implementation for fast loading",
+      "Optimized performance"
+    ],
+    "details": "This project involved designing and developing my personal portfolio website from a Figma concept into a fully functional, responsive web application. The website not only showcases my projects and skills but also includes a dynamic blog system powered by Firebase for content management and publishing.",
+    "goal": "The goal was to create a professional portfolio that highlights my projects, skills, and writing/blog content, while demonstrating a fully functional frontend integrated with Firebase backend services.",
+    "url": "https://ehsan-portfolio-one-beta.vercel.app/"
+  },
+  {
+    "id": 10,
     "title": "Code And Create",
     "description": "Dashboard design.",
     "image": "/portfolio_imgs/bootstrap-dashboard.png",
@@ -163,26 +249,7 @@
       "Optimized performance"
     ],
     "details": "Full project details for Dashboard Design.",
+    "goal": "The goal was to create a modern, functional dashboard that provides an intuitive interface for managing and visualizing data.",
     "url": "https://ehsan-admin-dashboard.netlify.app/"
-  },
-  {
-    "id": 9,
-    "title": "My Portfolio",
-    "description": "My new responsive and functional portfolio",
-    "image": "/portfolio_imgs/my-new-portfolio.png",
-    "images": [
-      "/portfolio_imgs/my-new-portfolio.png",
-      "/portfolio_imgs/my-new-portfolio2.png",
-      "/portfolio_imgs/my-new-portfolio4.png"
-    ],
-    "technologies": ["Vue", "Tailwind CSS", "Vuex", "Responsive Design"],
-    "features": [
-      "Modern responsive UI",
-      "Download CV",
-      "Social Medias",
-      "Optimized performance"
-    ],
-    "details": "Full project details for my prtfolio.",
-    "url": "https://ehsan-portfolio-one-beta.vercel.app/"
   }
 ]
