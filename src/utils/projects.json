@@ -2,14 +2,14 @@
   {
     "id": 1,
     "title": "Legacy Solutions LLC",
-    "description": "Responsive Landing Page Clone with Animations",
+    "description": "Responsive Landing Page Clone with Animations, GHL API Integration",
     "image": "/portfolio_imgs/legacy-thumbnail.png",
     "images": [
       "/portfolio_imgs/legacy-thumbnail.png",
       "/portfolio_imgs/legacy-solution3.png",
       "/portfolio_imgs/legacy-solution2.png"
     ],
-    "technologies": ["Vue", "Tailwind CSS", "Vuex", "Responsive Design"],
+    "technologies": ["Vue", "Tailwind CSS", "Vuex", "Responsive Design", "GHL API"],
     "features": [
       "Pixel-accurate layout matching the original design",
       "Fully responsive across mobile, tablet, and desktop devices",
@@ -18,11 +18,12 @@
       "Clean and scalable Vue component structure",
       "Functional CTA buttons with smooth scrolling to form sections",
       "Custom FAQ section and legal pages integration",
-      "SEO-friendly and lightweight frontend implementation"
+      "SEO-friendly and lightweight frontend implementation",
+      "GHL (GoHighLevel) API integration for lead capture and form submissions"
     ],
-    "details": "This project involved developing a fully responsive and high-performance landing page based on a reference design. The website was built using Vue.js and Tailwind CSS, ensuring clean structure, fast performance, and modern UI styling.",
-    "goal": "The goal was to create a visually appealing and highly functional landing page that accurately reflects the brand and provides an excellent user experience across all devices.",
-    "url": "https://legacy-solutions.vercel.app/"
+    "details": "This project involved developing a fully responsive and high-performance landing page based on a reference design. The website was built using Vue.js and Tailwind CSS, ensuring clean structure, fast performance, and modern UI styling. GHL API integration was added to seamlessly capture and manage leads directly within the GoHighLevel platform.",
+    "goal": "The goal was to create a visually appealing and highly functional landing page that accurately reflects the brand and provides an excellent user experience across all devices, while integrating GHL for streamlined lead management and automation.",
+    "url": "https://legacy-solutions-llc.vercel.app/"
   },
   {
     "id": 2,
