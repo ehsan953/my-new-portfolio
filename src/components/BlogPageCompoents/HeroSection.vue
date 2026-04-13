@@ -17,7 +17,8 @@
     <div class="relative z-10 max-w-5xl mx-auto text-center px-6">
       <!-- Title -->
       <h1
-        class="text-4xl md:text-6xl md:leading-[1.2] font-extrabold leading-tight tracking-tight animate-fadeIn"
+        v-reveal="'fade-in-down'"
+        class="text-4xl md:text-6xl md:leading-[1.2] font-extrabold leading-tight tracking-tight"
       >
         {{ title }}
         <span
@@ -29,13 +30,14 @@
 
       <!-- Subtitle -->
       <p
-        class="mt-6 text-lg md:text-xl text-gray-300 animate-fadeIn animation-delay-200"
+        v-reveal="{ animation: 'fade-in-up', delay: 120 }"
+        class="mt-6 text-lg md:text-xl text-gray-300"
       >
         {{ subtitle }}
       </p>
 
       <!-- CTA Button -->
-      <div class="mt-10 flex justify-center animate-fadeIn animation-delay-400">
+      <div v-reveal="{ animation: 'fade-in-up', delay: 240 }" class="mt-10 flex justify-center">
         <router-link
           to="/contact"
           class="relative inline-block px-10 py-3 text-lg font-semibold rounded-full text-white bg-gradient-to-r from-[#00A8CD] to-cyan-400 transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_25px_#00A8CD] shadow-lg shadow-[#00A8CD]/40"
@@ -139,14 +141,4 @@ export default defineComponent({
   animation: spinSlow 15s linear infinite;
 }
 
-/* Fade In */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fadeIn {
-  animation: fadeIn 1s ease forwards;
-}
-.animation-delay-200 { animation-delay: 0.2s; }
-.animation-delay-400 { animation-delay: 0.4s; }
 </style>

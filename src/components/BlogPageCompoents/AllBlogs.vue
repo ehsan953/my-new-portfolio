@@ -2,7 +2,7 @@
   <section class="py-16 bg-black text-white">
     <div class="max-w-7xl mx-auto px-6 space-y-12">
       <!-- Section Title -->
-      <div class="text-center">
+      <div v-reveal="'fade-in-down'" class="text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">
           My Blogs
         </h2>
@@ -11,7 +11,7 @@
         </p>
       </div>
       <!-- Layout Toggle -->
-      <div class="flex justify-center space-x-2 mb-6">
+      <div v-reveal="'fade-in-up'" class="flex justify-center space-x-2 mb-6">
         <button
           @click="layout = 'grid'"
           :class="
@@ -43,6 +43,10 @@
         <router-link
           v-for="(blog, index) in paginatedBlogs"
           :key="index"
+          v-reveal="{
+            animation: ['fade-in-up', 'fade-in-down', 'fade-in-left', 'fade-in-right'][index % 4],
+            delay: index * 60,
+          }"
           :to="`/blogs/${blog.id}`"
           class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
@@ -64,6 +68,10 @@
         <div
           v-for="(blog, index) in paginatedBlogs"
           :key="index"
+          v-reveal="{
+            animation: ['fade-in-left', 'fade-in-right'][index % 2],
+            delay: index * 70,
+          }"
           class="border-2 border-gray-800 flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
           <img
@@ -89,7 +97,7 @@
       </div>
 
       <!-- Pagination -->
-      <div class="flex justify-center items-center mt-8 space-x-2">
+      <div v-reveal="'fade-in-up'" class="flex justify-center items-center mt-8 space-x-2">
         <!-- Previous -->
         <button
           @click="prevPage"

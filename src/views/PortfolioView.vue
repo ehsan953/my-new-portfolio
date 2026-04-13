@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-6 space-y-12">
 
       <!-- Section Title -->
-      <div class="text-center">
+      <div v-reveal="'fade-in-down'" class="text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-4">{{ heading }}</h2>
         <p class="text-gray-400 max-w-3xl mx-auto">{{ description }}</p>
       </div>
@@ -11,8 +11,12 @@
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <router-link 
-          v-for="project in paginatedProjects" 
-          :key="project.id" 
+          v-for="(project, index) in paginatedProjects" 
+          :key="project.id"
+          v-reveal="{
+            animation: ['fade-in-up', 'fade-in-left', 'fade-in-right'][index % 3],
+            delay: index * 70,
+          }"
           :to="`/project/${project.id}`" 
           class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
@@ -25,7 +29,7 @@
       </div>
 
       <!-- Pagination -->
-      <div class="flex justify-center items-center mt-8 space-x-2">
+      <div v-reveal="'fade-in-up'" class="flex justify-center items-center mt-8 space-x-2">
         <!-- Previous -->
         <button 
           @click="prevPage"

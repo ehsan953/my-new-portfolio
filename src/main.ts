@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import "./assets/tailwind.css";
+import "./assets/scroll-reveal.css";
+import { reveal } from "./directives/reveal";
 
 // Vuetify imports
 import 'vuetify/styles';
@@ -16,4 +18,6 @@ const vuetify = createVuetify({
   directives,
 });
 
-createApp(App).use(store).use(router).use(vuetify).mount('#app')
+const app = createApp(App).use(store).use(router).use(vuetify);
+app.directive("reveal", reveal);
+app.mount("#app");

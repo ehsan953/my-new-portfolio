@@ -3,7 +3,7 @@
     <div class="max-w-4xl mx-auto px-6 space-y-10">
       
       <!-- Title -->
-      <h2 class="text-4xl font-bold text-[#00A8CD]">{{ project.title }}</h2>
+      <h2 v-reveal="'fade-in-down'" class="text-4xl font-bold text-[#00A8CD]">{{ project.title }}</h2>
 
       <!-- Images + Button in Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -11,6 +11,10 @@
         <img
           v-for="(img, index) in project.images"
           :key="'img-' + index"
+          v-reveal="{
+            animation: ['fade-in-up', 'fade-in-left', 'fade-in-right', 'fade-in-down'][index % 4],
+            delay: index * 80,
+          }"
           :src="img"
           :alt="`${project.title} screenshot ${index + 1}`"
           class="w-full h-auto object-cover rounded-lg shadow-lg hover:cursor-pointer"
@@ -20,6 +24,7 @@
         <!-- Live Project Button in last grid slot -->
         <div
           v-if="project.url"
+          v-reveal="'fade-in-up'"
           class="flex items-center justify-center sm:border sm:border-[#00A8CD]"
         >
           <button class="hover:bg-[#00A8CD] text-[#00A8CD] border border-[#00A8CD] hover:text-white rounded-lg shadow-lg transition cursor-pointer glow">
@@ -36,12 +41,12 @@
       </div>
 
       <!-- Description -->
-      <p class="text-gray-300 text-left" v-html="project.details"></p>
+      <p v-reveal="'fade-in-up'" class="text-gray-300 text-left" v-html="project.details"></p>
       <br/>
       <!-- Goal -->
-      <p class="text-gray-300 text-left mt-0" v-html="project.goal"></p>
+      <p v-reveal="'fade-in-up'" class="text-gray-300 text-left mt-0" v-html="project.goal"></p>
       <!-- Technologies -->
-      <div v-if="project.technologies && project.technologies.length" class="text-left">
+      <div v-if="project.technologies && project.technologies.length" v-reveal="'fade-in-left'" class="text-left">
         <h3 class="text-2xl font-semibold text-[#00A8CD] mt-6 mb-2">Technologies Used</h3>
         <ul class="list-disc list-outside pl-5 text-gray-400">
           <li v-for="(tech, index) in project.technologies" :key="'tech-' + index">
@@ -51,7 +56,7 @@
       </div>
 
       <!-- Features -->
-      <div v-if="project.features && project.features.length" class="text-left">
+      <div v-if="project.features && project.features.length" v-reveal="'fade-in-right'" class="text-left">
         <h3 class="text-2xl font-semibold text-[#00A8CD] mt-6 mb-2">Key Features</h3>
         <ul class="list-disc list-outside pl-5 text-gray-400">
           <li v-for="(feature, index) in project.features" :key="'feature-' + index">
