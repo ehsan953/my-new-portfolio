@@ -64,7 +64,7 @@
         <!-- Contact Info + Social Links -->
         <div class="flex basis-1/2 flex-col gap-6">
           <!-- Info Cards -->
-          <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 md:gap-6">
             <div
               v-reveal="{ animation: 'fade-in-right', delay: 0 }"
               class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
