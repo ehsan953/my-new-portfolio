@@ -2,7 +2,7 @@
   <section class="py-20 bg-black text-white">
     <div class="max-w-7xl mx-auto px-6 space-y-12">
       <!-- Section Title -->
-      <div class="text-center">
+      <div v-reveal="'fade-in-down'" class="text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">
           {{ heading }}
         </h2>
@@ -12,7 +12,10 @@
       <!-- Contact Content -->
       <div class="flex flex-col md:flex-row gap-8">
         <!-- Contact Form -->
-        <div class="basis-1/2 bg-gray-900 rounded-xl p-8 shadow-lg border-2 border-[#00A8CD]">
+        <div
+          v-reveal="'fade-in-left'"
+          class="basis-1/2 bg-gray-900 rounded-xl p-8 shadow-lg border-2 border-[#00A8CD]"
+        >
           <form @submit.prevent="submitForm" class="space-y-6">
             <div>
               <input
@@ -63,6 +66,7 @@
           <!-- Info Cards -->
           <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-6">
             <div
+              v-reveal="{ animation: 'fade-in-right', delay: 0 }"
               class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
             >
               <i class="fas fa-envelope text-[#00A8CD] text-2xl mt-1"></i>
@@ -73,6 +77,7 @@
             </div>
 
             <div
+              v-reveal="{ animation: 'fade-in-right', delay: 90 }"
               class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
             >
               <i class="fas fa-phone-alt text-[#00A8CD] text-2xl mt-1"></i>
@@ -83,6 +88,7 @@
             </div>
 
             <div
+              v-reveal="{ animation: 'fade-in-right', delay: 180 }"
               class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
             >
               <i class="fas fa-map-marker-alt text-[#00A8CD] text-2xl mt-1"></i>
@@ -91,7 +97,10 @@
                 <p class="text-gray-300">Gulberg, Lahore, Pakistan</p>
               </div>
             </div>
-            <div class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800">
+            <div
+              v-reveal="{ animation: 'fade-in-right', delay: 270 }"
+              class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800"
+            >
                 <i class="fas fa-comment-dots text-[#00A8CD] text-2xl mt-1"></i>
                 <div class="text-left">
                     <h4 class="text-[#00A8CD] font-semibold">Message</h4>
@@ -101,7 +110,7 @@
           </div>
 
           <!-- Social Links (Vertical) -->
-          <div class="flex space-x-4 mt-4 md:mt-0">
+          <div v-reveal="{ animation: 'fade-in-up', delay: 340 }" class="flex space-x-4 mt-4 md:mt-0">
             <a
               v-for="link in socialLinks"
               :key="link.name"

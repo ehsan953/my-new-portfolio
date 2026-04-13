@@ -1,0 +1,47 @@
+/* Scroll-triggered reveals — pair with v-reveal directive */
+
+.reveal {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.75s;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.reveal--fade-in-up {
+  transform: translate3d(0, 40px, 0);
+}
+
+.reveal--fade-in-down {
+  transform: translate3d(0, -40px, 0);
+}
+
+.reveal--fade-in-left {
+  transform: translate3d(-44px, 0, 0);
+}
+
+.reveal--fade-in-right {
+  transform: translate3d(44px, 0, 0);
+}
+
+.reveal--fade-in {
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .reveal.reveal-visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

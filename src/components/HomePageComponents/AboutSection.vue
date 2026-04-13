@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-6 space-y-12">
       
       <!-- Title + Description -->
-      <div class="text-center">
+      <div v-reveal="'fade-in-down'" class="text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">{{ heading }}</h2>
         <p class="text-gray-400 max-w-3xl mx-auto text-lg">{{ description }}</p>
       </div>
@@ -11,7 +11,10 @@
       <!-- Image + Text Flex -->
       <div class="flex flex-col md:flex-row items-start gap-10">
         <!-- Image (40%) -->
-        <div class="flex-1 md:basis-2/5 flex justify-center mx-auto">
+        <div
+          v-reveal="'fade-in-left'"
+          class="flex-1 md:basis-2/5 flex justify-center mx-auto"
+        >
           <div class="relative w-full max-w-xs md:max-w-sm">
             <img 
               :src="image" 
@@ -22,7 +25,10 @@
         </div>
 
         <!-- Text + Button (60%) -->
-        <div class="flex-1 md:basis-3/5 text-left">
+        <div
+          v-reveal="'fade-in-right'"
+          class="flex-1 md:basis-3/5 text-left"
+        >
           <p class="text-gray-300 text-lg mb-6 md:py-2">
             I'm a frontend-focused developer with nearly 2 years of professional experience, but I've been bridging design and development for over 3 years — turning Figma designs into responsive, pixel-perfect interfaces using HTML, CSS, TailwindCSS, Vue, and React.<br/><br/>
 
@@ -45,11 +51,19 @@
         </div>
         
     </div>
-    <h3 class="text-3xl md:text-4xl font-bold text-[#00A8CD] mb-12 text-center">
+    <h3
+      v-reveal="'fade-in-up'"
+      class="text-3xl md:text-4xl font-bold text-[#00A8CD] mb-12 text-center"
+    >
         Skills
     </h3>
     <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 xl:grid-cols-7 lg:w-[90%] mx-auto gap-8 mt-6">
-      <div v-for="skill in skills" :key="skill.name" class="space-y-2">
+      <div
+        v-for="(skill, index) in skills"
+        :key="skill.name"
+        v-reveal="{ animation: 'fade-in-up', delay: index * 45 }"
+        class="space-y-2"
+      >
         <!-- Rounded Loading Bar -->
         <!-- <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
           <div 

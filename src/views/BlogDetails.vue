@@ -7,12 +7,12 @@
 
       <div v-else-if="blog" class="space-y-6 text-left">
           
-        <h1 class="text-4xl font-bold text-[#00A8CD]">{{ blog.title }}</h1>
-        <p class="text-gray-400 text-sm flex gap-8">
+        <h1 v-reveal="'fade-in-down'" class="text-4xl font-bold text-[#00A8CD]">{{ blog.title }}</h1>
+        <p v-reveal="'fade-in-up'" class="text-gray-400 text-sm flex gap-8">
           <span class="font-medium">By {{ blog.author }}</span> <span>•
           {{ formatDate(blog.date) }}</span>
         </p>
-        <div class="w-[100%] aspect-[7/4] mx-auto">
+        <div v-reveal="'fade-in'" class="w-[100%] aspect-[7/4] mx-auto">
             <img
             :src="blog.image || '/blog_imgs/blog-default-img2.png'"
             :alt="blog.title"
@@ -21,6 +21,7 @@
         </div>
         
         <div
+          v-reveal="'fade-in-up'"
           class="prose prose-invert max-w-none mt-6"
           v-html="blog.content"
         ></div>

@@ -2,7 +2,7 @@
   <section id="blogs" class="relative py-20 bg-black text-white">
     <div class="max-w-6xl mx-auto px-6">
       <!-- Section Title -->
-      <div class="text-center mb-12">
+      <div v-reveal="'fade-in-down'" class="text-center mb-12">
         <h2 class="text-3xl md:text-5xl font-bold mb-6">
           Latest <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00A8CD] to-cyan-400">Blogs</span>
         </h2>  
@@ -16,6 +16,10 @@
         <div
           v-for="(blog, index) in blogs"
           :key="index"
+          v-reveal="{
+            animation: ['fade-in-up', 'fade-in-right', 'fade-in-left'][index % 3],
+            delay: index * 90,
+          }"
           class="bg-gray-900 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden group hover:scale-105 transition-transform duration-300"
         >
           <!-- Image -->
@@ -46,7 +50,7 @@
       </div>
 
       <!-- CTA Button -->
-      <div class="mt-10 flex justify-center animate-fadeIn animation-delay-400">
+      <div v-reveal="{ animation: 'fade-in-up', delay: 200 }" class="mt-10 flex justify-center">
         <router-link to="/blogs" class="relative inline-block px-10 py-3 text-lg font-semibold rounded-full text-white bg-gradient-to-r from-[#00A8CD] to-cyan-400 transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_25px_#00A8CD] shadow-lg shadow-[#00A8CD]/40">
           Explore Blogs
           <span
@@ -97,13 +101,5 @@ export default defineComponent({
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-/* Fade In */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fadeIn {
-  animation: fadeIn 1s ease forwards;
 }
 </style>

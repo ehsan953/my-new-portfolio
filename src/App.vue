@@ -7,6 +7,20 @@
 </template>
 
 <style>
+/* Prevent horizontal scroll from off-screen transforms (e.g. v-reveal translateX) and wide decor */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+#app,
+.v-application {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

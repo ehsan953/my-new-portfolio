@@ -17,7 +17,10 @@
     <div
       class="relative z-10 container mx-auto max-w-[1400px] flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-12 lg:px-16"
     >
-      <div class="flex-1 text-center md:text-left animate-fadeIn">
+      <div
+        v-reveal="'fade-in-left'"
+        class="flex-1 text-center md:text-left"
+      >
           <h1 class="text-4xl md:text-[42px] lg:text-5xl font-bold my-8">
             {{ name }}
           </h1>
@@ -74,9 +77,12 @@
         </div>
       </div>
 
-      <div class="flex-1 flex justify-center relative mt-8 md:mt-0 py-8">
+      <div
+        v-reveal="{ animation: 'fade-in-right', delay: 120 }"
+        class="flex-1 flex justify-center relative mt-8 md:mt-0 py-8"
+      >
         <div
-          class="w-[300px] h-[330px] sm:w-[370px] sm:h-[440px] md:w-[300px] md:h-[330px] lg:w-[350px] lg:h-[400px] xl:w-[370px] xl:h-[420px] bg-[#00303b] rounded-full relative flex justify-center items-center animate-fadeIn animation-delay-100"
+          class="w-[300px] h-[330px] sm:w-[370px] sm:h-[440px] md:w-[300px] md:h-[330px] lg:w-[350px] lg:h-[400px] xl:w-[370px] xl:h-[420px] bg-[#00303b] rounded-full relative flex justify-center items-center"
         >
           <img
             :src="image"
@@ -195,14 +201,4 @@ export default defineComponent({
 }
 .animate-spinSlow { animation: spinSlow 8s linear infinite; }
 
-/* Fade In */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fadeIn { animation: fadeIn 1s ease forwards; }
-.animation-delay-200 { animation-delay: 0.2s; }
-.animation-delay-400 { animation-delay: 0.4s; }
-.animation-delay-600 { animation-delay: 0.6s; }
-.animation-delay-800 { animation-delay: 0.8s; }
 </style>

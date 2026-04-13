@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-white text-center px-4 py-8 border-t-2 border-gray-800">
+  <footer v-reveal="'fade-in-up'" class="bg-gray-900 text-white text-center px-4 py-8 border-t-2 border-gray-800">
     <!-- Logo Row -->
     <div class="mb-6 flex justify-center">
       <router-link to="/" class="flex items-center space-x-2 w-[310px] h-[90px]">

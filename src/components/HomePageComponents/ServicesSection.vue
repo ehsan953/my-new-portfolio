@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 bg-black text-white">
     <!-- Section Header -->
-    <div class="text-center mb-12">
+    <div v-reveal="'fade-in-down'" class="text-center mb-12">
       <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">My Services</h2>
       <p class="text-gray-400 max-w-2xl mx-auto px-2 text-lg">
         I help businesses and individuals with modern web solutions, creating responsive, interactive, and high-performance websites and applications.
@@ -11,8 +11,12 @@
     <!-- Services Grid -->
     <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto px-4">
       <div 
-        v-for="service in services" 
-        :key="service.title" 
+        v-for="(service, index) in services" 
+        :key="service.title"
+        v-reveal="{
+          animation: ['fade-in-up', 'fade-in-left', 'fade-in-right', 'fade-in-down'][index % 4],
+          delay: index * 75,
+        }"
         class="border-2 border-gray-800 bg-gray-900 p-6 rounded-lg text-center hover:shadow-lg hover:shadow-[#00A8CD]/50 transition"
       >
         <!-- Icon -->
