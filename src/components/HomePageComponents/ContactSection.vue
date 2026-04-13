@@ -88,7 +88,7 @@
               <i class="fas fa-map-marker-alt text-[#00A8CD] text-2xl mt-1"></i>
               <div class="text-left">
                 <h4 class="text-[#00A8CD] font-semibold">Location</h4>
-                <p class="text-gray-300">Lahore, Pakistan</p>
+                <p class="text-gray-300">Gulberg, Lahore, Pakistan</p>
               </div>
             </div>
             <div class="flex items-start gap-4 bg-gray-900 rounded-xl p-4 shadow-md hover:shadow-lg transition border-2 border-gray-800">
