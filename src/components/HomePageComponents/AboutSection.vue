@@ -24,15 +24,13 @@
         <!-- Text + Button (60%) -->
         <div class="flex-1 md:basis-3/5 text-left">
           <p class="text-gray-300 text-lg mb-6 md:py-2">
-            I am a frontend developer with up to 2 years of experience specializing in Vue.js, Vuex, Vuetify, JavaScript, and basic React. I have also worked with Firebase and am currently expanding my skills towards full-stack development.<br/>
+            I'm a frontend-focused developer with nearly 2 years of professional experience, but I've been bridging design and development for over 3 years — turning Figma designs into responsive, pixel-perfect interfaces using HTML, CSS, TailwindCSS, Vue, and React.<br/><br/>
 
-            In addition to coding, I bring over 3 years of experience in UI design, transforming Figma designs into fully responsive and visually appealing interfaces using HTML, CSS, and TailwindCSS. 
-            I enjoy crafting seamless user experiences and bridging the gap between design and development, delivering polished and interactive web applications.<br/>
+            I've worked with React alongside Vue, and I'm now deepening it through the MERN stack (MongoDB, Express, React, Node.js).<br/><br/>
 
-            I am passionate about learning new technologies and continuously improving my skill set. 
-            I take pride in writing clean, maintainable code while adhering to best practices and modern development standards.<br/>
+            I leverage modern AI coding tools to build full-stack projects more efficiently that helped me apply backend concepts while maintaining my frontend strengths.<br/><br/>
 
-            Whether it’s building responsive layouts, integrating APIs, or optimizing performance, I strive to create solutions that meet user needs and business goals effectively.
+            I enjoy crafting seamless user experiences, integrating APIs, optimizing performance, and writing clean, maintainable code. I'm constantly learning and applying new technologies to real-world problems.
           </p>
           <div class="flex justify-start">
               <button
@@ -121,14 +119,15 @@ export default defineComponent({
       skills: [
         { name: "HTML", percentage: 95 },
         { name: "CSS", percentage: 85 },
-        { name: "JavaScript", percentage: 80 },
+        { name: "JavaScript", percentage: 70 },
         { name: "Tailwind CSS", percentage: 85 },
         { name: "Bootstrap", percentage: 70 },
         { name: "Saas", percentage: 70 },
         { name: "Vue.Js", percentage: 80 },
         { name: "Vuetify", percentage: 80 },
         { name: "Vuex", percentage: 80 },
-        { name: "React", percentage: 50 },
+        { name: "Nuxt", percentage: 60 },
+        { name: "React", percentage: 60 },
         { name: "Firebase", percentage: 70 },
         { name: "Github", percentage: 70 },
       ],
