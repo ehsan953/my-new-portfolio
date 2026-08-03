@@ -52,10 +52,10 @@
           </router-link>
           <button
             class="text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
-            onclick="window.location.href='/EhsanResumeB.pdf'"
+            onclick="window.location.href='/Ehsan_resume_updated.pdf'"
             style="border:1px solid #00A8CD !important"
           >
-            Download CV
+            View Resume
           </button>
         </div>
 

@@ -5,7 +5,7 @@
       <!-- Title + Description -->
       <div v-reveal="'fade-in-down'" class="text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">{{ heading }}</h2>
-        <p class="text-gray-400 max-w-3xl mx-auto text-lg">{{ description }}</p>
+        <p class="text-gray-300 max-w-3xl mx-auto text-lg">{{ description }}</p>
       </div>
 
       <!-- Image + Text Flex -->
@@ -27,24 +27,31 @@
         <!-- Text + Button (60%) -->
         <div
           v-reveal="'fade-in-right'"
-          class="flex-1 md:basis-3/5 text-left"
+          class="flex-1 md:basis-3/5 text-left text-gray-300 text-lg"
         >
-          <p class="text-gray-300 text-lg mb-6 md:py-2">
-            I'm a frontend-focused developer with nearly 2 years of professional experience, but I've been bridging design and development for over 3 years — turning Figma designs into responsive, pixel-perfect interfaces using HTML, CSS, TailwindCSS, Vue, and React.<br/><br/>
-
-            I've worked with React alongside Vue, and I'm now deepening it through the MERN stack (MongoDB, Express, React, Node.js).<br/><br/>
-
-            I leverage modern AI coding tools to build full-stack projects more efficiently that helped me apply backend concepts while maintaining my frontend strengths.<br/><br/>
-
-            I enjoy crafting seamless user experiences, integrating APIs, optimizing performance, and writing clean, maintainable code. I'm constantly learning and applying new technologies to real-world problems.
+          <p class="mb-2">
+            I have nearly 2 years of professional experience, along with 3+ years of hands-on development. I specialize in turning Figma designs into clean, responsive, and pixel-perfect interfaces using Vue, React, and Tailwind CSS.
           </p>
+          <p class="mb-2">
+            While my core strength is frontend development, I’m actively expanding into full-stack development using the MERN stack (MongoDB, Express, React, Node.js), building scalable and production-ready applications.
+          </p>
+          <p class="mb-2">
+            I focus on performance, user experience, and clean architecture. I enjoy integrating APIs, optimizing applications, and continuously learning new technologies to solve real-world problems efficiently.
+          </p>
+          <ul class="list-disc list-inside text-gray-300 mb-4">
+            <li>2+ years professional experience</li>
+            <li>Frontend Specialist (Vue, React, Next.js)</li>
+            <li>MERN Stack (Learning & Building)</li>
+            <li>API Integration & Performance Optimizatio</li>
+            <li>Clean UI & Pixel-perfect Design Implementation</li>
+          </ul>
           <div class="flex justify-start">
               <button
                 class="text-[#00A8CD] font-medium px-6 py-3 rounded hover:bg-[#00A8CD] hover:text-black transition"
                 style="border:1px solid #00A8CD !important"
-                onclick="window.location.href='/EhsanResumeB.pdf'"
+                onclick="window.location.href='/Ehsan_resume_updated.pdf'"
                 >
-                Download CV
+                View Resume
               </button>
           </div>
           <!-- Skills -->
@@ -127,23 +134,22 @@ export default defineComponent({
   data() {
     return {
       heading: "About Me",
-      description: "I am Muhammad Ehsan, a passionate software developer building responsive, interactive, and high-performance web applications.",
+      description: "I’m Muhammad Ehsan, a frontend-focused developer building responsive, high-performance web applications using modern technologies.",
       image: "/ehsan3.jpg",
       aboutText: ``,
       skills: [
-        { name: "HTML", percentage: 95 },
-        { name: "CSS", percentage: 85 },
         { name: "JavaScript", percentage: 70 },
+        { name: "Vue.Js", percentage: 80 },
+        { name: "React", percentage: 60 },
+        { name: "Nuxt", percentage: 60 },
         { name: "Tailwind CSS", percentage: 85 },
         { name: "Bootstrap", percentage: 70 },
-        { name: "Saas", percentage: 70 },
-        { name: "Vue.Js", percentage: 80 },
         { name: "Vuetify", percentage: 80 },
         { name: "Vuex", percentage: 80 },
-        { name: "Nuxt", percentage: 60 },
-        { name: "React", percentage: 60 },
-        { name: "Firebase", percentage: 70 },
         { name: "Github", percentage: 70 },
+        { name: "HTML", percentage: 95 },
+        { name: "CSS", percentage: 85 },
+        { name: "Firebase", percentage: 70 },
       ],
     };
   },
