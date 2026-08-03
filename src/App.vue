@@ -7,18 +7,34 @@
 </template>
 
 <style>
-/* Prevent horizontal scroll from off-screen transforms (e.g. v-reveal translateX) and wide decor */
-html,
-body {
-  overflow-x: hidden;
+/* Clip horizontal overflow without creating nested vertical scrollbars.
+   overflow-x: hidden forces overflow-y to auto (CSS quirk) → double scrollbars.
+   Vuetify's .v-layout--full-height { height: 100% } can also nest a scroller. */
+html {
+  overflow-x: clip;
   width: 100%;
   max-width: 100%;
 }
 
+body {
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
 #app,
 .v-application {
-  overflow-x: hidden;
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 100dvh;
   max-width: 100%;
+}
+
+.v-application__wrap {
+  min-height: 100dvh;
+  height: auto !important;
+  overflow: visible;
 }
 
 #app {
