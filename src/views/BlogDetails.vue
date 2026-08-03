@@ -1,8 +1,17 @@
 <template>
   <section class="py-16 bg-black text-white min-h-screen">
     <div class="max-w-3xl mx-auto px-6">
-      <div v-if="loading" class="text-center text-gray-400 text-lg">
-        Loading blog...
+      <div v-if="loading" class="space-y-6 animate-pulse">
+        <div class="h-10 w-3/4 rounded bg-gray-800"></div>
+        <div class="h-4 w-1/2 rounded bg-gray-800"></div>
+        <div class="w-full aspect-[7/4] rounded-lg bg-gray-800 relative overflow-hidden">
+          <div class="absolute inset-0 skeleton-shimmer"></div>
+        </div>
+        <div class="space-y-3">
+          <div class="h-4 w-full rounded bg-gray-800"></div>
+          <div class="h-4 w-full rounded bg-gray-800"></div>
+          <div class="h-4 w-5/6 rounded bg-gray-800"></div>
+        </div>
       </div>
 
       <div v-else-if="blog" class="space-y-6 text-left">
@@ -12,12 +21,13 @@
           <span class="font-medium">By {{ blog.author }}</span> <span>•
           {{ formatDate(blog.date) }}</span>
         </p>
-        <div v-reveal="'fade-in'" class="w-[100%] aspect-[7/4] mx-auto">
-            <img
+        <div v-reveal="'fade-in'" class="w-full mx-auto">
+          <SkeletonImage
             :src="blog.image || '/blog_imgs/blog-default-img2.png'"
             :alt="blog.title"
-            class="w-full h-full object-cover rounded-lg"
-            />
+            wrapper-class="w-full aspect-[7/4] rounded-lg"
+            img-class="w-full h-full object-cover rounded-lg"
+          />
         </div>
         
         <div
@@ -40,9 +50,11 @@ import { defineComponent, ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/utils/firebaseConfig";
+import SkeletonImage from "@/components/SkeletonImage.vue";
 
 export default defineComponent({
   name: "BlogDetails",
+  components: { SkeletonImage },
   setup() {
     const route = useRoute();
     const blog = ref<any>(null);
@@ -90,5 +102,27 @@ export default defineComponent({
 .prose-invert a {
   color: #00A8CD;
   text-decoration: underline;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    110deg,
+    #1f2937 0%,
+    #1f2937 35%,
+    #374151 50%,
+    #1f2937 65%,
+    #1f2937 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 </style>

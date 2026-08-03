@@ -24,12 +24,13 @@
         >
           <!-- Image -->
           <div class="relative h-48 overflow-hidden">
-            <img
+            <SkeletonImage
               :src="blog.image || '/blog_imgs/blog-default-img2.png'"
               :alt="blog.title"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              wrapper-class="w-full h-full"
+              img-class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
           </div>
 
           <!-- Content -->
@@ -66,9 +67,11 @@
 import { defineComponent } from "vue";
 import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
 import { db } from "@/utils/firebaseConfig";
+import SkeletonImage from "@/components/SkeletonImage.vue";
 
 export default defineComponent({
   name: "BlogSection",
+  components: { SkeletonImage },
   data() {
     return {
       blogs: [] as any[],

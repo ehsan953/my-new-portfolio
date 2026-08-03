@@ -20,7 +20,12 @@
           :to="`/project/${project.id}`" 
           class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
-          <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover"/>
+          <SkeletonImage
+            :src="project.image"
+            :alt="project.title"
+            wrapper-class="w-full h-48"
+            img-class="w-full h-full object-cover"
+          />
           <div class="p-4">
             <h3 class="text-xl font-semibold text-[#00A8CD] mb-2">{{ project.title }}</h3>
             <p class="text-gray-300">{{ project.description }}</p>
@@ -67,9 +72,11 @@
 <script>
 import { defineComponent } from "vue";
 import projectsData from "@/utils/projects.json";
+import SkeletonImage from "@/components/SkeletonImage.vue";
 
 export default defineComponent({
   name: "PortfolioPage",
+  components: { SkeletonImage },
   data() {
     return {
       heading: "My Portfolio",

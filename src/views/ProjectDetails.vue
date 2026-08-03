@@ -8,7 +8,7 @@
       <!-- Images + Button in Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <!-- Images -->
-        <img
+        <SkeletonImage
           v-for="(img, index) in project.images"
           :key="'img-' + index"
           v-reveal="{
@@ -17,7 +17,8 @@
           }"
           :src="img"
           :alt="`${project.title} screenshot ${index + 1}`"
-          class="w-full h-auto object-cover rounded-lg shadow-lg hover:cursor-pointer"
+          wrapper-class="w-full rounded-lg shadow-lg hover:cursor-pointer project-shot"
+          img-class="w-full h-auto object-cover block rounded-lg"
           @click="openImage(img)"
         />
 
@@ -69,7 +70,13 @@
     <!-- Image Dialog -->
     <v-dialog v-model="dialog" max-width="1400px">
       <v-card style="padding:8px">
-        <v-img :src="selectedImage" alt="Selected" class="w-full h-auto rounded-lg" />
+        <SkeletonImage
+          v-if="selectedImage"
+          :src="selectedImage"
+          alt="Selected"
+          wrapper-class="w-full rounded-lg aspect-video"
+          img-class="w-full h-auto object-contain rounded-lg"
+        />
       </v-card>
     </v-dialog>
   </section>
@@ -78,9 +85,11 @@
 
 <script>
 import projectsData from "@/utils/projects.json";
+import SkeletonImage from "@/components/SkeletonImage.vue";
 
 export default {
   name: "PortfolioDetail",
+  components: { SkeletonImage },
   data() {
     const projectId = parseInt(this.$route.params.id);
     const project = projectsData.find(p => p.id === projectId) || {};
@@ -100,11 +109,11 @@ export default {
 </script>
 
 <style scoped>
-img {
+.project-shot {
   box-shadow: 0 8px 20px rgba(0, 168, 205, 0.5);
   transition: box-shadow 0.3s ease;
 }
-img:hover {
+.project-shot:hover {
   box-shadow: 0 12px 25px rgba(0, 168, 205, 0.8);
 }
 @keyframes glowPulse {

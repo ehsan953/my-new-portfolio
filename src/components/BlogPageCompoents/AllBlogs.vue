@@ -50,10 +50,11 @@
           :to="`/blogs/${blog.id}`"
           class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
-          <img
-            :src="blog.image"
+          <SkeletonImage
+            :src="blog.image || '/blog_imgs/blog-default-img2.png'"
             :alt="blog.title"
-            class="w-full h-48 object-cover"
+            wrapper-class="w-full h-48"
+            img-class="w-full h-full object-cover"
           />
           <div class="p-4">
             <h3 class="text-xl font-semibold text-[#00A8CD] mb-2">
@@ -74,10 +75,11 @@
           }"
           class="border-2 border-gray-800 flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
-          <img
+          <SkeletonImage
             :src="blog.image || '/blog_imgs/blog-default-img2.png'"
             :alt="blog.title"
-            class="w-full md:w-1/4 h-48 object-cover"
+            wrapper-class="w-full md:w-1/4 h-48 shrink-0"
+            img-class="w-full h-full object-cover"
           />
           <div class="p-6 text-left">
             <div class="mb-2">
@@ -136,12 +138,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent } from "vue";
 import { collection, query, onSnapshot, orderBy } from "firebase/firestore";
 import { db } from "@/utils/firebaseConfig"; // adjust path if needed
+import SkeletonImage from "@/components/SkeletonImage.vue";
 
 export default defineComponent({
   name: "BlogsPage",
+  components: { SkeletonImage },
   data() {
     return {
       layout: "grid",
