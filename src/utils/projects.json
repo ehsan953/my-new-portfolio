@@ -1,6 +1,87 @@
 [
   {
     "id": 1,
+    "title": "MedLynk",
+    "description": "Healthcare discovery platform for organizations, professionals, admins, and regulators.",
+    "image": "/portfolio_imgs/medlynk.png",
+    "images": [
+      "/portfolio_imgs/medlynk.png",
+      "/portfolio_imgs/medlynk_org_profile.png",
+      "/portfolio_imgs/medlynk_user_signup.png",
+      "/portfolio_imgs/medlynk_user_signup.png",
+      "/portfolio_imgs/medlynk_admin.png",
+      "/portfolio_imgs/medlynk_regulator.png",
+      "/portfolio_imgs/medlynk_post.png"
+    ],
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "TanStack Query",
+      "Formik",
+      "Yup",
+      "Axios",
+      "TipTap"
+    ],
+    "features": [
+      "Multi-role portals for admin, organizations, professionals, and regulators",
+      "Organization onboarding with dynamic signup fields and review workflows",
+      "Admin moderation for organizations, products, posts, billing, and staff",
+      "Regulator review queue with audit trail and live content views",
+      "Organization profile, products, posts, team, and go-live management",
+      "Public discovery feed with organization, product, and post detail pages",
+      "Rich-text content editing with TipTap",
+      "Auth flows including login, signup, verification, and password reset",
+      "Responsive UI with reusable component system"
+    ],
+    "details": "MedLynk is a multi-portal healthcare discovery platform frontend built with Next.js, React, and TypeScript. I developed the frontend across admin, organization, professional, regulator, and public experiences — including onboarding, approval pathways, content moderation, billing surfaces, and discovery views — with Formik/Yup forms, Redux Toolkit auth state, TanStack Query data fetching, and a Tailwind-based UI system.",
+    "goal": "The goal was to build a scalable, role-based frontend for a medical discovery platform where organizations can onboard and publish content, admins and regulators can review and moderate it, and professionals can discover trusted healthcare products and posts through a clear, responsive interface.",
+    "url": "https://healhcare-discovery-frontend.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "OB33Z — Social Lounge & Vibe Room Platform",
+    "description": "Realtime social lounge platform with live chat, host queues, gifts, and shared media",
+    "image": "/portfolio_imgs/ob33z.png",
+    "images": [
+      "/portfolio_imgs/ob33z-lounge.png",
+      "/portfolio_imgs/ob33z-vibe-room.png",
+      "/portfolio_imgs/ob33z-gifts.png"
+    ],
+    "technologies": [
+      "Nuxt 4",
+      "Vue.js 3",
+      "TypeScript",
+      "Pinia",
+      "Tailwind CSS",
+      "Laravel Echo",
+      "Pusher",
+      "Stripe Checkout",
+      "Nuxt i18n",
+      "Responsive Design"
+    ],
+    "features": [
+      "Dual live rooms — The Lounge and The Vibe Room — with host-driven participation",
+      "Realtime sync via Laravel Echo/Pusher (chat, gifts, host requests, media, polls)",
+      "VIP host queue with accept, skip, complete, and gift-activity workflows",
+      "Digital gift system with inventory, animations, and Stripe checkout",
+      "Monetized engagement: boosts, Boost Plus, Front & Center, and Speed Rounds",
+      "Shared room media playback with YouTube embeds and host-controlled now-playing",
+      "Vibe Room conversation lanes and structured video-table seating",
+      "Membership tiers (Free / VIP / Elite) with profile and document verification gates",
+      "Observer mode for browse-before-join without full membership access",
+      "Bilingual UI (English / Spanish) with a custom gold-on-noir brand system",
+      "Ambassador referrals and Stripe Connect payouts flow",
+      "In-room polls and live leaderboard updates tied to gift/boost activity"
+    ],
+    "details": "OB33Z is a Nuxt 4 frontend for a premium realtime social lounge experience. Members enter branded rooms—especially The Lounge and The Vibe Room—to chat live, request host attention, send digital gifts, and follow shared music or media. The client uses Pinia for state, Laravel Echo/Pusher for live events, i18n for bilingual support, and Stripe-hosted checkouts for gifts, boosts, and memberships, all wrapped in a custom dark gold-and-purple design system.",
+    "goal": "The goal was to build a conversion-ready social product where live hosting, paid participation, membership gates, and realtime room sync feel seamless for both hosts and members across Lounge and Vibe Room experiences.",
+    "url": "https://staging.ob33z.com/"
+  },
+  {
+    "id": 3,
     "title": "Legacy Solutions LLC",
     "description": "Responsive Landing Page Clone with Animations, GHL API Integration",
     "image": "/portfolio_imgs/legacy-thumbnail.png",
@@ -26,7 +107,7 @@
     "url": "https://legacy-solutions-llc.vercel.app/"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Omegus Prime",
     "description": "Figma to Website with Test Cases & SEO",
     "image": "/portfolio_imgs/omegusprime.png",
@@ -51,7 +132,7 @@
     "url": "https://omegusprime.com/"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "CodeSyncs",
     "description": "Full Stack Company Website with Firebase & Figma Design",
     "image": "/portfolio_imgs/codesyncs.PNG",
@@ -80,7 +161,7 @@
     "url": "https://www.codesyncs.com/"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "International BodyTalk Association (IBA)",
     "description": "Bridging the gap between health & education",
     "image": "/portfolio_imgs/iba.png",
@@ -114,7 +195,7 @@
     "url": "https://bodytalksystem.com/"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "LUXECLUB",
     "description": "Travel Company Website – Frontend Design | Figma",
     "image": "/portfolio_imgs/fsd-assessment.png",
@@ -137,7 +218,39 @@
     "url": "https://fsd-assessment-j8yn.vercel.app/"
   },
   {
-    "id": 6,
+    "id": 8,
+    "title": "ScheduleADR Template Builder (Prototype)",
+    "description": "Vue.js WYSIWYG Template Editor with Variable Injection & DOCX Generation",
+    "image": "/portfolio_imgs/template-builder-prototype.png",
+    "images": [
+      "/portfolio_imgs/template-builder-prototype.png"
+    ],
+    "technologies": [
+      "Vue.js",
+      "CKEditor",
+      "JavaScript",
+      "WYSIWYG Editor",
+      "docxtemplater",
+      "Ruby on Rails (Integration)",
+      "Responsive Design"
+    ],
+    "features": [
+      "Rich text WYSIWYG editor built with CKEditor",
+      "Visual variable/token insertion (no manual syntax required)",
+      "Variables grouped by categories (case, parties, mediator, date/time, etc.)",
+      "Protected variable placeholders to prevent accidental edits",
+      "Reusable template creation, saving, and editing",
+      "Seamless compatibility with docxtemplater for .docx generation",
+      "Clean separation between editor UI and output format",
+      "User-friendly interface designed for non-technical staff",
+      "Fast prototype built with iterative 'vibe coding' approach"
+    ],
+    "details": "This project is a Vue.js-based prototype WYSIWYG template builder developed for ScheduleADR, a SaaS platform used by mediation offices. The goal was to simplify the process of creating legal notice templates by replacing manual Word editing with a visual editor. Users can easily insert predefined variables through a UI, eliminating syntax errors and improving usability. The system outputs templates compatible with docxtemplater, ensuring seamless DOCX generation via the existing Ruby on Rails backend.",
+    "goal": "The goal was to design an intuitive and error-resistant template editor that allows non-technical users to confidently create and manage legal document templates, while maintaining full compatibility with the existing document generation pipeline.",
+    "url": "https://template-builder-prototype.vercel.app/"
+  },
+  {
+    "id": 9,
     "title": "CloudHub",
     "description": "CloudHubb Website – Figma to Responsive Frontend",
     "image": "/portfolio_imgs/cloudhub.png",
@@ -162,7 +275,7 @@
     "url": "https://cloudhubb.netlify.app/"
   },
   {
-    "id": 7,
+    "id": 10,
     "title": "Otis Kit Pro",
     "description": "Modern Responsive SaaS Website Clone with Tailwind CSS",
     "image": "/portfolio_imgs/otis-kit-pro.png",
@@ -185,7 +298,7 @@
     "url": "https://otis-kit-pro.netlify.app/"
   },
   {
-    "id": 8,
+    "id": 11,
     "title": "Omnifood",
     "description": "Modern Responsive Food Delivery Restaurant Design",
     "image": "/portfolio_imgs/omnifood-thumbnail.png",
@@ -208,7 +321,7 @@
     "url": "https://omnifood-ahsan.netlify.app/"
   },
   {
-    "id": 9,
+    "id": 12,
     "title": "My Portfolio",
     "description": "Portfolio Website | Figma to Code & Firebase",
     "image": "/portfolio_imgs/portfolio-thumbnail.png",
@@ -234,8 +347,9 @@
     "goal": "The goal was to create a professional portfolio that highlights my projects, skills, and writing/blog content, while demonstrating a fully functional frontend integrated with Firebase backend services.",
     "url": "https://ehsan-portfolio-one-beta.vercel.app/"
   },
+  
   {
-    "id": 10,
+    "id": 13,
     "title": "Code And Create",
     "description": "Dashboard design.",
     "image": "/portfolio_imgs/bootstrap-dashboard.png",

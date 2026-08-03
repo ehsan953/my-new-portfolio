@@ -72,7 +72,7 @@
               <i class="fas fa-envelope text-[#00A8CD] text-2xl mt-1"></i>
               <div class="text-left break-words">
                 <h4 class="text-[#00A8CD] font-semibold">Email</h4>
-                <p class="text-gray-300 break-all">muhammadehsanhassan781@gmail.com</p>
+                <p class="text-gray-300 break-all">ehsanx247@gmail.com</p>
               </div>
             </div>
 

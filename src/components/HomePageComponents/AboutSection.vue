@@ -147,7 +147,7 @@ export default defineComponent({
         { name: "Vuetify", percentage: 80 },
         { name: "Vuex", percentage: 80 },
         { name: "Github", percentage: 70 },
-        { name: "HTML", percentage: 95 },
+        { name: "HTML", percentage: 90 },
         { name: "CSS", percentage: 85 },
         { name: "Firebase", percentage: 70 },
       ],

@@ -4,7 +4,7 @@
     <div v-reveal="'fade-in-down'" class="text-center mb-12">
       <h2 class="text-4xl md:text-5xl font-bold text-[#00A8CD] mb-6">My Services</h2>
       <p class="text-gray-400 max-w-2xl mx-auto px-2 text-lg">
-        I help businesses and individuals with modern web solutions, creating responsive, interactive, and high-performance websites and applications.
+        I specialize in building modern, high-performance frontend applications and scalable web solutions.
       </p>
     </div>
 
@@ -41,32 +41,32 @@ export default defineComponent({
       services: [
         {
           title: "Web Development",
-          description: "Build responsive, modern websites using Vue, React, or Node.js.",
+          description: "Build fast, responsive, and scalable web applications using Vue, React, and modern frontend technologies with a focus on performance and clean architecture.",
           iconClass: "fas fa-laptop-code",
         },
         {
           title: "UI/UX Design",
-          description: "Design intuitive interfaces and engaging user experiences.",
+          description: "Convert Figma and design files into pixel-perfect, responsive interfaces with strong focus on usability and user experience.",
           iconClass: "fas fa-paint-brush",
         },
         {
           title: "Backend Development",
-          description: "Create robust server-side applications and APIs.",
+          description: "Develop backend services and REST APIs using Node.js and Firebase, focusing on real-time data handling and scalable architecture.",
           iconClass: "fas fa-server",
         },
         {
           title: "Frontend Optimization",
-          description: "Improve website performance, SEO, and user experience.",
+          description: "Optimize frontend performance, improve loading speed, and enhance SEO and accessibility for better user experience.",
           iconClass: "fas fa-bolt",
         },
         {
           title: "API Integration",
-          description: "Integrate third-party services and payment gateways.",
+          description: "Integrate third-party APIs, payment gateways, and external services seamlessly into web applications.",
           iconClass: "fas fa-link",
         },
         {
           title: "Consulting",
-          description: "Provide technical guidance for your projects and workflows.",
+          description: "Provide technical guidance on frontend architecture, performance optimization, and best practices for scalable web applications.",
           iconClass: "fas fa-comments",
         },
       ],

@@ -40,11 +40,11 @@
     <!-- Contact Info Row -->
     <div class="mb-6 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6">
         <a
-            href="mailto:muhammadehsanhassan781@gmail.com"
+            href="mailto:ehsanx247@gmail.com"
             class="flex items-center space-x-2 hover:text-[#00A8CD] transition-colors"
         >
             <i class="fas fa-envelope text-[#00A8CD]"></i>
-            <span class="email-size">muhammadehsanhassan781@gmail.com</span>
+            <span class="email-size">ehsanx247@gmail.com</span>
         </a>
         <a
             href="tel:+923034408443"
