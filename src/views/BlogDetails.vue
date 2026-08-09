@@ -32,8 +32,8 @@
         
         <div
           v-reveal="'fade-in-up'"
-          class="prose prose-invert max-w-none mt-6"
-          v-html="blog.content"
+          class="blog-content prose prose-invert max-w-none mt-6"
+          v-html="cleanedContent"
         ></div>
         
       </div>
@@ -46,11 +46,34 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted } from "vue";
+import { defineComponent, ref, computed, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/utils/firebaseConfig";
 import SkeletonImage from "@/components/SkeletonImage.vue";
+
+/** Remove empty Quill blocks like <h3><br></h3> or <p><br></p> that create extra gaps. */
+function cleanBlogContent(html: string): string {
+  if (!html) return "";
+
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = html;
+
+  const isEmptyBlock = (el: Element) => {
+    const text = (el.textContent || "").replace(/\u00a0/g, " ").trim();
+    if (text.length > 0) return false;
+    // Allow intentionally empty media / embeds if added later
+    return !el.querySelector("img, video, iframe, table");
+  };
+
+  wrapper
+    .querySelectorAll("h1, h2, h3, h4, h5, h6, p")
+    .forEach((el) => {
+      if (isEmptyBlock(el)) el.remove();
+    });
+
+  return wrapper.innerHTML;
+}
 
 export default defineComponent({
   name: "BlogDetails",
@@ -59,6 +82,10 @@ export default defineComponent({
     const route = useRoute();
     const blog = ref<any>(null);
     const loading = ref(true);
+
+    const cleanedContent = computed(() =>
+      cleanBlogContent(blog.value?.content || "")
+    );
 
     const fetchBlog = async () => {
       const blogId = route.params.id as string;
@@ -85,7 +112,7 @@ export default defineComponent({
 
     onMounted(fetchBlog);
 
-    return { blog, loading, formatDate };
+    return { blog, loading, formatDate, cleanedContent };
   },
 });
 </script>
@@ -102,6 +129,48 @@ export default defineComponent({
 .prose-invert a {
   color: #00A8CD;
   text-decoration: underline;
+}
+
+/* Quill stores bullets as <ol><li data-list="bullet"> — restore list styles
+   that Tailwind preflight and missing Quill CSS would otherwise strip. */
+.blog-content ol,
+.blog-content ul {
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.blog-content li {
+  display: list-item;
+  margin: 0.4rem 0;
+  padding-left: 0.25rem;
+}
+
+.blog-content li[data-list="bullet"] {
+  list-style-type: disc;
+}
+
+.blog-content li[data-list="ordered"],
+.blog-content ol > li:not([data-list]) {
+  list-style-type: decimal;
+}
+
+.blog-content ul > li {
+  list-style-type: disc;
+}
+
+.blog-content .ql-ui {
+  display: none;
+}
+
+.blog-content p {
+  margin: 0.85rem 0;
+}
+
+.blog-content h2,
+.blog-content h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .skeleton-shimmer {
