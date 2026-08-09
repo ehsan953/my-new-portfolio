@@ -23,7 +23,7 @@
         </p>
         <div v-reveal="'fade-in'" class="w-full mx-auto">
           <SkeletonImage
-            :src="blog.image || '/blog_imgs/blog-default-img2.png'"
+            :src="getBlogCoverImage(blog)"
             :alt="blog.title"
             wrapper-class="w-full aspect-[7/4] rounded-lg"
             img-class="w-full h-full object-cover rounded-lg"
@@ -51,6 +51,7 @@ import { useRoute } from "vue-router";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/utils/firebaseConfig";
 import SkeletonImage from "@/components/SkeletonImage.vue";
+import { getBlogCoverImage } from "@/utils/blogImages";
 
 /** Remove empty Quill blocks like <h3><br></h3> or <p><br></p> that create extra gaps. */
 function cleanBlogContent(html: string): string {
@@ -112,7 +113,7 @@ export default defineComponent({
 
     onMounted(fetchBlog);
 
-    return { blog, loading, formatDate, cleanedContent };
+    return { blog, loading, formatDate, cleanedContent, getBlogCoverImage };
   },
 });
 </script>

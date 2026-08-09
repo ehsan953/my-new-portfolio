@@ -27,7 +27,7 @@
           >
             <td class="px-6 py-3">
               <img
-                :src="item.image || '/blog_imgs/blog-default-img2.png'"
+                :src="getBlogCoverImage(item)"
                 alt="Cover"
                 class="w-24 h-16 object-cover rounded"
               />
@@ -155,6 +155,7 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 import { db } from "../../utils/firebaseConfig";
+import { getBlogCoverImage, getRandomBlogCoverImage } from "@/utils/blogImages";
 
 export default defineComponent({
   name: "AdminBlogs",
@@ -182,6 +183,7 @@ export default defineComponent({
     },
   },
   methods: {
+    getBlogCoverImage,
     formatDate(date: any) {
       if (!date) return "";
       if (date.toDate) return date.toDate().toISOString().split("T")[0];
@@ -224,7 +226,7 @@ export default defineComponent({
         content: this.newBlog.content,
         date: serverTimestamp(),
         status: "Active",
-        image: "/blog_imgs/blog-default-img2.png",
+        image: getRandomBlogCoverImage(),
       });
 
       this.resetDialog();

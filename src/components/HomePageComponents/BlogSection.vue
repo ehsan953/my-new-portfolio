@@ -25,7 +25,7 @@
           <!-- Image -->
           <div class="relative h-48 overflow-hidden">
             <SkeletonImage
-              :src="blog.image || '/blog_imgs/blog-default-img2.png'"
+              :src="getBlogCoverImage(blog)"
               :alt="blog.title"
               wrapper-class="w-full h-full"
               img-class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -68,6 +68,7 @@ import { defineComponent } from "vue";
 import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
 import { db } from "@/utils/firebaseConfig";
 import SkeletonImage from "@/components/SkeletonImage.vue";
+import { getBlogCoverImage } from "@/utils/blogImages";
 
 export default defineComponent({
   name: "BlogSection",
@@ -81,6 +82,7 @@ export default defineComponent({
     await this.fetchBlogs();
   },
   methods: {
+    getBlogCoverImage,
     async fetchBlogs() {
       try {
         const q = query(collection(db, "blogs"), orderBy("date", "desc"), limit(3));

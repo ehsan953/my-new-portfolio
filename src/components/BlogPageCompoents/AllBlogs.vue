@@ -51,7 +51,7 @@
           class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
           <SkeletonImage
-            :src="blog.image || '/blog_imgs/blog-default-img2.png'"
+            :src="getBlogCoverImage(blog)"
             :alt="blog.title"
             wrapper-class="w-full h-48"
             img-class="w-full h-full object-cover"
@@ -76,7 +76,7 @@
           class="border-2 border-gray-800 flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
         >
           <SkeletonImage
-            :src="blog.image || '/blog_imgs/blog-default-img2.png'"
+            :src="getBlogCoverImage(blog)"
             :alt="blog.title"
             wrapper-class="w-full md:w-1/4 h-48 shrink-0"
             img-class="w-full h-full object-cover"
@@ -142,6 +142,7 @@ import { defineComponent } from "vue";
 import { collection, query, onSnapshot, orderBy } from "firebase/firestore";
 import { db } from "@/utils/firebaseConfig"; // adjust path if needed
 import SkeletonImage from "@/components/SkeletonImage.vue";
+import { getBlogCoverImage } from "@/utils/blogImages";
 
 export default defineComponent({
   name: "BlogsPage",
@@ -179,6 +180,7 @@ export default defineComponent({
     },
   },
   methods: {
+    getBlogCoverImage,
     prevPage() {
       if (this.currentPage > 1) this.currentPage--;
     },
