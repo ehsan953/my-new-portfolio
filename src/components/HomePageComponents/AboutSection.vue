@@ -39,7 +39,7 @@
             I focus on performance, user experience, and clean architecture. I enjoy integrating APIs, optimizing applications, and continuously learning new technologies to solve real-world problems efficiently.
           </p>
           <ul class="list-disc list-inside text-gray-300 mb-4">
-            <li>2+ years of professional experience</li>
+            <li>2.5+ years of professional experience</li>
             <li>Frontend Specialist (Vue, React, Next.js, Nuxt.js)</li>
             <li>MERN Stack (Learning & Building)</li>
             <li>API Integration & Performance Optimization</li>
