@@ -30,7 +30,7 @@
           class="flex-1 md:basis-3/5 text-left text-gray-300 text-lg"
         >
           <p class="mb-2">
-            I have nearly 2 years of professional experience, along with 3+ years of hands-on development. I specialize in turning Figma designs into clean, responsive, and pixel-perfect interfaces using Vue, React, and Tailwind CSS.
+            I've overall 3 years of experience, with strong expertise in Vue.js (Vue 2 & Vue 3), and hands-on experience with React, Next.js, and Nuxt.js, along with Tailwind CSS and other modern frameworks.
           </p>
           <p class="mb-2">
             While my core strength is frontend development, I’m actively expanding into full-stack development using the MERN stack (MongoDB, Express, React, Node.js), building scalable and production-ready applications.
@@ -39,10 +39,10 @@
             I focus on performance, user experience, and clean architecture. I enjoy integrating APIs, optimizing applications, and continuously learning new technologies to solve real-world problems efficiently.
           </p>
           <ul class="list-disc list-inside text-gray-300 mb-4">
-            <li>2+ years professional experience</li>
-            <li>Frontend Specialist (Vue, React, Next.js)</li>
+            <li>2+ years of professional experience</li>
+            <li>Frontend Specialist (Vue, React, Next.js, Nuxt.js)</li>
             <li>MERN Stack (Learning & Building)</li>
-            <li>API Integration & Performance Optimizatio</li>
+            <li>API Integration & Performance Optimization</li>
             <li>Clean UI & Pixel-perfect Design Implementation</li>
           </ul>
           <div class="flex justify-start">
@@ -140,8 +140,10 @@ export default defineComponent({
       skills: [
         { name: "JavaScript", percentage: 70 },
         { name: "Vue.Js", percentage: 80 },
-        { name: "React", percentage: 60 },
-        { name: "Nuxt", percentage: 60 },
+        { name: "React", percentage: 70 },
+        { name: "Nuxt", percentage: 70 },
+        { name: "Next", percentage: 70 },
+        { name: "Redux", percentage: 70 },
         { name: "Tailwind CSS", percentage: 85 },
         { name: "Bootstrap", percentage: 70 },
         { name: "Vuetify", percentage: 80 },

@@ -38,7 +38,7 @@
     ],
     "details": "MedLynk is a multi-portal healthcare discovery platform frontend built with Next.js, React, and TypeScript. I developed the frontend across admin, organization, professional, regulator, and public experiences — including onboarding, approval pathways, content moderation, billing surfaces, and discovery views — with Formik/Yup forms, Redux Toolkit auth state, TanStack Query data fetching, and a Tailwind-based UI system.",
     "goal": "The goal was to build a scalable, role-based frontend for a medical discovery platform where organizations can onboard and publish content, admins and regulators can review and moderate it, and professionals can discover trusted healthcare products and posts through a clear, responsive interface.",
-    "url": "https://healhcare-discovery-frontend.vercel.app/"
+    "url": "https://app.medistrate.com/"
   },
   {
     "id": 2,
@@ -83,7 +83,7 @@
   {
     "id": 3,
     "title": "Legacy Solutions LLC",
-    "description": "Responsive Landing Page Clone with Animations, GHL API Integration",
+    "description": "Responsive Landing Page Clone with Animations and GoHighLevel (GHL) Integration",
     "image": "/portfolio_imgs/legacy-thumbnail.png",
     "images": [
       "/portfolio_imgs/legacy-thumbnail.png",
